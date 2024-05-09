@@ -1,0 +1,32 @@
+const IAdministradorRepository = require("../interfaces/i_administrador-repository");
+const { Administrador } = require("../data/dbContext");
+
+class AdministradorRepositoryMySql extends IAdministradorRepository {
+  constructor() {
+    super();
+  }
+
+  create = async (administrador) => {
+    await Administrador.create({
+      nome: administrador.nome,
+      email: administrador.email,
+      senha: administrador.senha,
+      codigo_instituicaocls_fk: administrador.codigo_instituicao_fk,
+    });
+  };
+
+  get = async (codigo) => {
+    let administrador = await Administrador.findOne({
+      where: { codigo: codigo },
+    });
+
+    return administrador;
+  };
+
+  getAll = async () => {
+    let administradores = await Administrador.findAll({});
+    return administradores;
+  };
+}
+
+module.exports = AdministradorRepositoryMySql;

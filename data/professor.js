@@ -25,19 +25,17 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.STRING,
                 alowNull: false
             },
-            serie:{
-                type: DataTypes.STRING,
-                alowNull: false,
-            },
-            nascimento:{
-                type: DataTypes.TIMESTAMP,
-                alowNull: false
-            },
             matricula:{
                 type: DataTypes.INTEGER,
+                alowNull: false,
+            },
+            materia:{
+                type: DataTypes.STRING,
                 alowNull: false
             },
             codigo_instituicao_fk:{
+                type: DataTypes.INTEGER,
+                alowNull: false
             }
         },
         { freezeTableName: true, timeStamps: false }

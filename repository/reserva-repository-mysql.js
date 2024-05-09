@@ -1,0 +1,31 @@
+const IReservaRepository = require("../interfaces/i_reserva-repository");
+const { Reserva } = require("../data/dbContext");
+
+class ReservaRepositoryMySql extends IReservaRepository {
+  constructor() {
+    super();
+  }
+
+  create = async (reserva) => {
+    await Reserva.create({
+      codigo_sala_fk: reserva.codigo_sala_fk,
+      codigo_material_fk: reserva.codigo_material_fk,
+      codigo_professor_fk: reserva.codigo_professor_fk,
+    });
+  };
+
+  get = async (codigo) => {
+    let reserva = await Reserva.findOne({
+      where: { codigo: codigo },
+    });
+
+    return reserva;
+  };
+
+  getAll = async () => {
+    let reservas = await Reserva.findAll({});
+    return reservas;
+  };
+}
+
+module.exports = ReservaRepositoryMySql;
