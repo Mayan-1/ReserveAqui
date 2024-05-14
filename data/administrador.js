@@ -34,32 +34,4 @@ module.exports = (sequelize, DataTypes) => {
   );
   return Administrador;
 };
-    const Administrador = sequelize.define(
-        "administrador",
-        {
-            codigo:{
-                type: DataTypes.INTEGER,
-                primaryKey: true,
-                alowNull: false,
-                autoIncrement: true,
-                unique: true,
-            },
-            nome:{
-                type: DataTypes.STRING,
-                alowNull: false,
-            },
-            email:{
-                type: DataTypes.STRING,
-                alowNull: false,
-            },
-            senha:{
-                type: DataTypes.STRING,
-                alowNull: false
-            },
-            codigo_instituicao_fk:{
-            }
-        },
-        { freezeTableName: true, timeStamps: false }
-    );
-    return Administrador;
-}
+    

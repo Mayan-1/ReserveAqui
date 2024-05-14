@@ -7,10 +7,7 @@ class SalaRepositoryMySql extends ISalaRepository {
   }
 
   create = async (sala) => {
-    await Sala.create({
-      nome: sala.nome,
-      disponibilidade: sala.disponibilidade,
-    });
+    await Sala.create(sala);
   };
 
   get = async (codigo) => {

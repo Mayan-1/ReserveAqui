@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
 
-      diponibilidade: {
+      disponibilidade: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
       },

@@ -6,7 +6,7 @@ class AlunoRepositoryMySql extends IAlunoRepository {
     super();
   }
 
-  adicionarProduto = async (aluno) => {
+  create = async (aluno) => {
     await Aluno.create({
       nome: aluno.nome,
       email: aluno.email,

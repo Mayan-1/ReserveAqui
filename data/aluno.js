@@ -3,8 +3,8 @@ const { type } = require("os");
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize, DataTypes) => {
-    const Professor = sequelize.define(
-        "professor",
+    const Aluno = sequelize.define(
+        "aluno",
         {
             codigo:{
                 type: DataTypes.INTEGER,
@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
                 alowNull: false,
             },
             nascimento:{
-                type: DataTypes.TIMESTAMP,
+                type: DataTypes.DATE,
                 alowNull: false
             },
             matricula:{
@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
                 alowNull: false
             }
         },
-        { freezeTableName: true, timeStamps: false }
+        { freezeTableName: true, timestamps: false }
     );
-    return Professor;
-}
+    return Aluno;
+};

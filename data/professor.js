@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
                 alowNull: false
             }
         },
-        { freezeTableName: true, timeStamps: false }
+        { freezeTableName: true, timestamps: false }
     );
     return Professor;
 }
