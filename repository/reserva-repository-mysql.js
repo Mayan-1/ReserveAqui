@@ -26,6 +26,21 @@ class ReservaRepositoryMySql extends IReservaRepository {
     let reservas = await Reserva.findAll({});
     return reservas;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let reserva = await Reserva.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return professor;
+  };
+
+  remove = async (codigo) => {
+    let reserva = await Reserva.findOne({
+      where: { codigo: codigo },
+    });
+    await reserva.destroy();
+  };
 }
 
 module.exports = ReservaRepositoryMySql;

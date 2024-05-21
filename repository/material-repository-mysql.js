@@ -25,6 +25,21 @@ class MaterialRepositoryMySql extends IMaterialRepository {
     let materiais = await Material.findAll({});
     return materiais;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let material = await Material.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return material;
+  };
+
+  remove = async (codigo) => {
+    let material = await Material.findOne({
+      where: { codigo: codigo },
+    });
+    await material.destroy();
+  };
 }
 
 module.exports = MaterialRepositoryMySql;

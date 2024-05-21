@@ -7,7 +7,10 @@ class SalaRepositoryMySql extends ISalaRepository {
   }
 
   create = async (sala) => {
-    await Sala.create(sala);
+    await Sala.create({
+      nome: sala.nome,
+      disponibilidade: sala.disponibilidade,
+    });
   };
 
   get = async (codigo) => {
@@ -21,6 +24,21 @@ class SalaRepositoryMySql extends ISalaRepository {
   getAll = async () => {
     let salas = await Sala.findAll({});
     return salas;
+  };
+
+  update = async (codigo, valoresNovos) => {
+    let sala = await Sala.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return sala;
+  };
+
+  remove = async (codigo) => {
+    let sala = await Sala.findOne({
+      where: { codigo: codigo },
+    });
+    await sala.destroy();
   };
 }
 

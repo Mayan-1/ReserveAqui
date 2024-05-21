@@ -27,6 +27,21 @@ class AdministradorRepositoryMySql extends IAdministradorRepository {
     let administradores = await Administrador.findAll({});
     return administradores;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let administrador = await Administrador.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return administrador;
+  };
+
+  remove = async (codigo) => {
+    let administrador = await Administrador.findOne({
+      where: { codigo: codigo },
+    });
+    await administrador.destroy();
+  };
 }
 
 module.exports = AdministradorRepositoryMySql;

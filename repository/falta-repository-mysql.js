@@ -24,6 +24,21 @@ class FaltaRepositoryMySql extends IFaltaRepository {
     let faltas = await Falta.findAll({});
     return faltas;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let falta = await Falta.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return falta;
+  };
+
+  remove = async (codigo) => {
+    let falta = await Falta.findOne({
+      where: { codigo: codigo },
+    });
+    await falta.destroy();
+  };
 }
 
 module.exports = FaltaRepositoryMySql;

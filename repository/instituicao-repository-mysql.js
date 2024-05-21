@@ -1,5 +1,6 @@
 const IInstituicaoRepository = require("../interfaces/i_instituicao-repository");
 const { Instituicao } = require("../data/dbContext");
+const { where } = require("sequelize");
 
 class InstituicaoRepositoryMySql extends IInstituicaoRepository {
   constructor() {
@@ -24,6 +25,20 @@ class InstituicaoRepositoryMySql extends IInstituicaoRepository {
   getAll = async () => {
     let instituicoes = await Instituicao.findAll({});
     return instituicoes;
+  };
+
+  update = async (codigo, valoresNovos) => {
+    let instituicaoAtualizada = await Instituicao.update(valoresNovos, {
+      where: { codigo: codigo },
+    });
+    return instituicaoAtualizada;
+  };
+
+  remove = async (codigo) => {
+    let instituicao = await Instituicao.findOne({
+      where: { codigo: codigo },
+    });
+    await instituicao.destroy();
   };
 }
 

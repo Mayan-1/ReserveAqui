@@ -30,6 +30,21 @@ class AlunoRepositoryMySql extends IAlunoRepository {
     let alunos = await Aluno.findAll({});
     return alunos;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let aluno = await Aluno.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return aluno;
+  };
+
+  remove = async (codigo) => {
+    let aluno = await Aluno.findOne({
+      where: { codigo: codigo },
+    });
+    await aluno.destroy();
+  };
 }
 
 module.exports = AlunoRepositoryMySql;

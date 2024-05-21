@@ -29,6 +29,21 @@ class ProfessorRepositoryMySql extends IProfessorRepository {
     let professores = await Professor.findAll({});
     return professores;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let professor = await Professor.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return professor;
+  };
+
+  remove = async (codigo) => {
+    let professor = await Professor.findOne({
+      where: { codigo: codigo },
+    });
+    await professor.destroy();
+  };
 }
 
 module.exports = ProfessorRepositoryMySql;

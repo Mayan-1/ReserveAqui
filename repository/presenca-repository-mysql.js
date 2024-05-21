@@ -26,6 +26,21 @@ class PresencaRepositoryMySql extends IPresencaRepository {
     let presencas = await Presenca.findAll({});
     return presencas;
   };
+
+  update = async (codigo, valoresNovos) => {
+    let presenca = await Presenca.update({
+      valoresNovos,
+      where: { codigo: codigo },
+    });
+    return presenca;
+  };
+
+  remove = async (codigo) => {
+    let presenca = await Presenca.findOne({
+      where: { codigo: codigo },
+    });
+    await presenca.destroy();
+  };
 }
 
 module.exports = PresencaRepositoryMySql;

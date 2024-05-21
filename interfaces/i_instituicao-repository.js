@@ -18,6 +18,14 @@ class IInstituicaoRepository {
   getAll = async () => {
     throw new Error("Esse método não pode ser chamado");
   };
+
+  update = async () => {
+    throw new Error("Esse método não pode ser chamado");
+  };
+
+  remove = async () => {
+    throw new Error("Esse método não pode ser chamado");
+  };
 }
 
 module.exports = IInstituicaoRepository;

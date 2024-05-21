@@ -14,6 +14,14 @@ class InstituicaoApplication {
   getAll = async () => {
     return await this.instituicaoRepository.getAll();
   };
+
+  update = async (codigo, valoresNovos) => {
+    return await this.instituicaoRepository.update(codigo, valoresNovos);
+  };
+
+  remove = async (codigo) => {
+    return await this.instituicaoRepository.remove(codigo);
+  };
 }
 
 module.exports = InstituicaoApplication;
