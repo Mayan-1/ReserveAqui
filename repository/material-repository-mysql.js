@@ -27,8 +27,7 @@ class MaterialRepositoryMySql extends IMaterialRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let material = await Material.update({
-      valoresNovos,
+    let material = await Material.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return material;

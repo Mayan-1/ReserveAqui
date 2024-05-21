@@ -31,8 +31,7 @@ class ProfessorRepositoryMySql extends IProfessorRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let professor = await Professor.update({
-      valoresNovos,
+    let professor = await Professor.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return professor;

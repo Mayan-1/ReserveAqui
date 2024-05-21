@@ -28,8 +28,7 @@ class PresencaRepositoryMySql extends IPresencaRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let presenca = await Presenca.update({
-      valoresNovos,
+    let presenca = await Presenca.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return presenca;

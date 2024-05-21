@@ -35,6 +35,7 @@ const ReservaFacade = require("./facade/reserva-facade");
 const SalaRepositoryMySql = require("./repository/sala-repository-mysql");
 const SalaApplication = require("./applications/sala-application");
 const SalaFacade = require("./facade/sala-facade");
+const { where } = require("sequelize");
 
 const instituicaoRepository = new InstituicaoRepositoryMySql();
 const instituicaoApplication = new InstituicaoApplication(
@@ -147,7 +148,7 @@ app.get("/api/GetAdministrador/:codigo", async (req, res) => {
 });
 
 app.get("/api/GetAdministradores", async (req, res) => {
-  let administrador = await instituicaoFacade.getAll();
+  let administrador = await administradorFacade.getAll();
   res.json(administrador);
 });
 
@@ -156,7 +157,7 @@ app.post("/api/CreateAdministrador", async (req, res) => {
     nome: req.body.nome,
     email: req.body.email,
     senha: req.body.senha,
-    codigo_instituicaocls_fk: administrador.codigo_instituicao_fk,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const administrador = await administradorFacade.create(request);
@@ -169,7 +170,7 @@ app.put("/api/UpdateAdministrador/:codigo", async (req, res) => {
     nome: req.body.nome,
     email: req.body.email,
     senha: req.body.senha,
-    codigo_instituicaocls_fk: administrador.codigo_instituicao_fk,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const administradorAtualizado = await administradorFacade.update(
@@ -200,19 +201,19 @@ app.get("/api/GetAluno/:codigo", async (req, res) => {
 });
 
 app.get("/api/GetAlunos", async (req, res) => {
-  let aluno = await instituicaoFacade.getAll();
+  let aluno = await alunoFacade.getAll();
   res.json(aluno);
 });
 
 app.post("/api/CreateAluno", async (req, res) => {
   let request = {
-    nome: aluno.nome,
-    email: aluno.email,
-    senha: aluno.senha,
-    serie: aluno.senha,
-    nascimento: aluno.nascimento,
-    matricula: aluno.matricula,
-    codigo_instituicao_fk: aluno.codigo_instituicao_fk,
+    nome: req.body.nome,
+    email: req.body.email,
+    senha: req.body.senha,
+    serie: req.body.senha,
+    nascimento: req.body.nascimento,
+    matricula: req.body.matricula,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const aluno = await alunoFacade.create(request);
@@ -222,13 +223,13 @@ app.post("/api/CreateAluno", async (req, res) => {
 app.put("/api/UpdateAluno/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    nome: aluno.nome,
-    email: aluno.email,
-    senha: aluno.senha,
-    serie: aluno.senha,
-    nascimento: aluno.nascimento,
-    matricula: aluno.matricula,
-    codigo_instituicao_fk: aluno.codigo_instituicao_fk,
+    nome: req.body.nome,
+    email: req.body.email,
+    senha: req.body.senha,
+    serie: req.body.senha,
+    nascimento: req.body.nascimento,
+    matricula: req.body.matricula,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const alunoAtualizado = await alunoFacade.update(codigo, novosValores);
@@ -262,7 +263,7 @@ app.get("/api/GetFaltas", async (req, res) => {
 
 app.post("/api/CreateFalta", async (req, res) => {
   let request = {
-    quantidade: falta.quantidade,
+    quantidade: req.body.quantidade,
   };
 
   const falta = await faltaFacade.create(request);
@@ -272,11 +273,11 @@ app.post("/api/CreateFalta", async (req, res) => {
 app.put("/api/UpdateFalta/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    quantidade: falta.quantidade,
+    quantidade: req.body.quantidade,
   };
 
   const faltaAtualizada = await faltaFacade.update(codigo, novosValores);
-  res.status(200).send(alunoAtualizado);
+  res.status(200).send(faltaAtualizada);
 });
 
 app.delete("/api/RemoveFalta/:codigo", async (req, res) => {
@@ -292,7 +293,7 @@ app.delete("/api/RemoveFalta/:codigo", async (req, res) => {
 app.get("/api/GetMaterial/:codigo", async (req, res) => {
   try {
     const codigo = req.params.codigo;
-    let material = await faltaFacade.get(codigo);
+    let material = await materialFacade.get(codigo);
     res.json(material);
   } catch (error) {
     res.status(500).send({ error: error.message });
@@ -300,14 +301,14 @@ app.get("/api/GetMaterial/:codigo", async (req, res) => {
 });
 
 app.get("/api/GetMateriais", async (req, res) => {
-  let material = await faltaFacade.getAll();
+  let material = await materialFacade.getAll();
   res.json(material);
 });
 
 app.post("/api/CreateMaterial", async (req, res) => {
   let request = {
-    nome: material.nome,
-    quantidade: material.quantidade,
+    nome: req.body.nome,
+    quantidade: req.body.quantidade,
   };
 
   const material = await materialFacade.create(request);
@@ -317,8 +318,8 @@ app.post("/api/CreateMaterial", async (req, res) => {
 app.put("/api/UpdateMaterial/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    nome: material.nome,
-    quantidade: material.quantidade,
+    nome: req.body.nome,
+    quantidade: req.body.quantidade,
   };
 
   const materialAtualizado = await materialFacade.update(codigo, novosValores);
@@ -338,7 +339,7 @@ app.delete("/api/RemoveMaterial/:codigo", async (req, res) => {
 app.get("/api/GetPresenca/:codigo", async (req, res) => {
   try {
     const codigo = req.params.codigo;
-    let presenca = await faltaFacade.get(codigo);
+    let presenca = await presencaFacade.get(codigo);
     res.json(presenca);
   } catch (error) {
     res.status(500).send({ error: error.message });
@@ -346,14 +347,14 @@ app.get("/api/GetPresenca/:codigo", async (req, res) => {
 });
 
 app.get("/api/GetPresencas", async (req, res) => {
-  let presenca = await faltaFacade.getAll();
+  let presenca = await presencaFacade.getAll();
   res.json(presenca);
 });
 
 app.post("/api/CreatePresenca", async (req, res) => {
   let request = {
-    codigo_reserva_fk: presenca.codigo_reserva_fk,
-    codigo_aluno_fk: presenca.codigo_aluno_fk,
+    codigo_reserva_fk: req.body.codigo_reserva_fk,
+    codigo_aluno_fk: req.body.codigo_aluno_fk,
   };
 
   const presenca = await presencaFacade.create(request);
@@ -363,8 +364,8 @@ app.post("/api/CreatePresenca", async (req, res) => {
 app.put("/api/UpdatePresenca/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    codigo_reserva_fk: presenca.codigo_reserva_fk,
-    codigo_aluno_fk: presenca.codigo_aluno_fk,
+    codigo_reserva_fk: req.body.codigo_reserva_fk,
+    codigo_aluno_fk: req.body.codigo_aluno_fk,
   };
 
   const presencaAtualizada = await presencaFacade.update(codigo, novosValores);
@@ -398,12 +399,12 @@ app.get("/api/GetProfessores", async (req, res) => {
 
 app.post("/api/CreateProfessor", async (req, res) => {
   let request = {
-    nome: professor.nome,
-    email: professor.email,
-    senha: professor.senha,
-    matricula: professor.matricula,
-    materia: professor.materia,
-    codigo_instituicao_fk: professor.codigo_instituicao_fk,
+    nome: req.body.nome,
+    email: req.body.email,
+    senha: req.body.senha,
+    matricula: req.body.matricula,
+    materia: req.body.materia,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const professor = await professorFacade.create(request);
@@ -413,12 +414,12 @@ app.post("/api/CreateProfessor", async (req, res) => {
 app.put("/api/UpdateReserva/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    nome: professor.nome,
-    email: professor.email,
-    senha: professor.senha,
-    matricula: professor.matricula,
-    materia: professor.materia,
-    codigo_instituicao_fk: professor.codigo_instituicao_fk,
+    nome: req.body.nome,
+    email: req.body.email,
+    senha: req.body.senha,
+    matricula: req.body.matricula,
+    materia: req.body.materia,
+    codigo_instituicao_fk: req.body.codigo_instituicao_fk,
   };
 
   const professorAtualizada = await professorFacade.update(
@@ -455,9 +456,9 @@ app.get("/api/GetReserva", async (req, res) => {
 
 app.post("/api/CreateReserva", async (req, res) => {
   let request = {
-    codigo_sala_fk: reserva.codigo_sala_fk,
-    codigo_material_fk: reserva.codigo_material_fk,
-    codigo_professor_fk: reserva.codigo_professor_fk,
+    codigo_sala_fk: req.body.codigo_sala_fk,
+    codigo_material_fk: req.body.codigo_material_fk,
+    codigo_professor_fk: req.body.codigo_professor_fk,
   };
 
   const reserva = await reservaFacade.create(request);
@@ -467,9 +468,9 @@ app.post("/api/CreateReserva", async (req, res) => {
 app.put("/api/UpdateReserva/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    codigo_sala_fk: reserva.codigo_sala_fk,
-    codigo_material_fk: reserva.codigo_material_fk,
-    codigo_professor_fk: reserva.codigo_professor_fk,
+    codigo_sala_fk: req.body.codigo_sala_fk,
+    codigo_material_fk: req.body.codigo_material_fk,
+    codigo_professor_fk: req.body.codigo_professor_fk,
   };
 
   const reservaAtualizada = await reservaFacade.update(codigo, novosValores);
@@ -496,15 +497,15 @@ app.get("/api/GetSala/:codigo", async (req, res) => {
   }
 });
 
-app.get("/api/GetSala", async (req, res) => {
+app.get("/api/GetSalas", async (req, res) => {
   let sala = await salaFacade.getAll();
   res.json(sala);
 });
 
 app.post("/api/CreateSala", async (req, res) => {
   let request = {
-    nome: sala.nome,
-    disponibilidade: sala.disponibilidade,
+    nome: req.body.nome,
+    disponibilidade: req.body.disponibilidade,
   };
 
   const sala = await salaFacade.create(request);
@@ -514,8 +515,8 @@ app.post("/api/CreateSala", async (req, res) => {
 app.put("/api/UpdateSala/:codigo", async (req, res) => {
   const codigo = req.params.codigo;
   const novosValores = {
-    nome: sala.nome,
-    disponibilidade: sala.disponibilidade,
+    nome: req.body.nome,
+    disponibilidade: req.body.disponibilidade,
   };
 
   const salaAtualizada = await salaFacade.update(codigo, novosValores);

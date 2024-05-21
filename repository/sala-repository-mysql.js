@@ -27,8 +27,7 @@ class SalaRepositoryMySql extends ISalaRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let sala = await Sala.update({
-      valoresNovos,
+    let sala = await Sala.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return sala;

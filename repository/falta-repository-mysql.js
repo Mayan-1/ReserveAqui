@@ -26,8 +26,7 @@ class FaltaRepositoryMySql extends IFaltaRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let falta = await Falta.update({
-      valoresNovos,
+    let falta = await Falta.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return falta;

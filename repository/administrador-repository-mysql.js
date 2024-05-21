@@ -29,11 +29,10 @@ class AdministradorRepositoryMySql extends IAdministradorRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let administrador = await Administrador.update({
-      valoresNovos,
+    let administradorAtualizado = await Administrador.update(valoresNovos, {
       where: { codigo: codigo },
     });
-    return administrador;
+    return administradorAtualizado;
   };
 
   remove = async (codigo) => {

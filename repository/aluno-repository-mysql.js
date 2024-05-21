@@ -32,8 +32,7 @@ class AlunoRepositoryMySql extends IAlunoRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let aluno = await Aluno.update({
-      valoresNovos,
+    let aluno = await Aluno.update(valoresNovos, {
       where: { codigo: codigo },
     });
     return aluno;

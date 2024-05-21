@@ -28,11 +28,10 @@ class ReservaRepositoryMySql extends IReservaRepository {
   };
 
   update = async (codigo, valoresNovos) => {
-    let reserva = await Reserva.update({
-      valoresNovos,
+    let reserva = await Reserva.update(valoresNovos, {
       where: { codigo: codigo },
     });
-    return professor;
+    return reserva;
   };
 
   remove = async (codigo) => {
