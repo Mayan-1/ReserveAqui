@@ -9,7 +9,7 @@ const presencaRouter = require("./routes/presenca-router");
 const professorRouter = require("./routes/professor-router");
 const reservaRouter = require("./routes/reserva-router");
 const salaRouter = require("./routes/sala-router");
-const routerAuth = require("./routes/auth_router");
+const routerAuth = require("./routes/auth-router");
 
 const app = express();
 const port = 3000;
