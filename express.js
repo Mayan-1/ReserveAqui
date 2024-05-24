@@ -1,6 +1,6 @@
 const express = require("express");
 
-const instituicaoRouter = require("./routes/instituicao-router"); 
+const instituicaoRouter = require("./routes/instituicao-router");
 const administradorRouter = require("./routes/administrador-router");
 const alunoRouter = require("./routes/aluno-router");
 const faltaRouter = require("./routes/falta-router");
@@ -11,11 +11,11 @@ const reservaRouter = require("./routes/reserva-router");
 const salaRouter = require("./routes/sala-router");
 const routerAuth = require("./routes/auth_router");
 
-
 const app = express();
 const port = 3000;
 
 app.use(express.json());
+
 app.use("/api/instituicao", instituicaoRouter);
 app.use("/api/administrador", administradorRouter);
 app.use("/api/aluno", alunoRouter);
