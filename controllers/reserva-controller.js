@@ -29,3 +29,9 @@ module.exports.delete = async (req, res) => {
   await reservaFacade.delete(codigo);
   res.status(200).json({ status: "Reserva deletada!" });
 };
+
+module.exports.buscarPorData = async (req, res) => {
+  let data = req.params.data;
+  let reserva = await reservaFacade.buscarPorData(data);
+  res.status(reserva);
+};

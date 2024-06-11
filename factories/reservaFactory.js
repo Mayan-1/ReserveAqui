@@ -7,7 +7,7 @@ class ReservaFactory {
 
   novaReserva(reserva) {
     const reservaFacade = new ReservaFacade();
-    if (this.reserva.seReservado()) {
+    if (this.reservaFacade.buscarPorData() != null) {
       reservaFacade.create(reserva);
     } else {
       console.log("Já existe agendamento para essa data!");
