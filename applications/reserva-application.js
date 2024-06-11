@@ -22,6 +22,10 @@ class ReservaApplication {
   remove = async (codigo) => {
     return await this.reservaRepository.remove(codigo);
   };
+
+  buscarPorData = async (data) => {
+    return await this.reservaRepository.buscarPorData(data);
+  };
 }
 
 module.exports = ReservaApplication;

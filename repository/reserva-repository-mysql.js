@@ -1,5 +1,6 @@
 const IReservaRepository = require("../interfaces/i_reserva-repository");
 const { Reserva } = require("../data/dbContext");
+const { where } = require("sequelize");
 
 class ReservaRepositoryMySql extends IReservaRepository {
   constructor() {
@@ -8,6 +9,7 @@ class ReservaRepositoryMySql extends IReservaRepository {
 
   create = async (reserva) => {
     await Reserva.create({
+      data: reserva.data,
       codigo_sala_fk: reserva.codigo_sala_fk,
       codigo_material_fk: reserva.codigo_material_fk,
       codigo_professor_fk: reserva.codigo_professor_fk,
@@ -39,6 +41,13 @@ class ReservaRepositoryMySql extends IReservaRepository {
       where: { codigo: codigo },
     });
     await reserva.destroy();
+  };
+
+  buscarPorData = async (data) => {
+    let reserva = await Reserva.findOne({
+      where: { data: data },
+    });
+    return reserva;
   };
 }
 

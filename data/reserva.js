@@ -9,19 +9,23 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         unique: true,
       },
+      data: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
       codigo_sala_fk: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
 
       codigo_material_fk: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
 
       codigo_professor_fk: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
     },
     { freezeTableName: true, timestamps: false }
