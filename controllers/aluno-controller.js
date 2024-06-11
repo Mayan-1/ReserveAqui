@@ -7,7 +7,7 @@ module.exports.findAll = async (req, res) => {
 
 module.exports.findById = async (req, res) => {
   let codigo = req.params.codigo;
-  let aluno = await instituicaoFacade.get(codigo);
+  let aluno = await alunoFacade.get(codigo);
   res.json(aluno);
 };
 

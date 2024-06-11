@@ -7,7 +7,7 @@ module.exports.findAll = async (req, res) => {
 
 module.exports.findById = async (req, res) => {
   let codigo = req.params.codigo;
-  let administrador = await instituicaoFacade.get(codigo);
+  let administrador = await administradorFacade.get(codigo);
   res.json(administrador);
 };
 
@@ -20,7 +20,7 @@ module.exports.create = async (req, res) => {
 module.exports.update = async (req, res) => {
   let codigo = req.params.codigo;
   let novosValores = req.body;
-  let administrador = await usuarioFacade.update(codigo, novosValores);
+  let administrador = await administradorFacade.update(codigo, novosValores);
   res.json(administrador);
 };
 
