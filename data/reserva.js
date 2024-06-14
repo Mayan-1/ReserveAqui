@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       codigo_material_fk: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
       },
       codigo_professor_fk: {
         type: DataTypes.INTEGER,

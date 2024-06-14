@@ -1,16 +1,14 @@
 const Reserva = require("../entities/reserva.js");
 
 class ReservaFactory {
-  constructor(reserva, sala) {
+  constructor(reserva, sala, material) {
     this.reserva = reserva;
     this.sala = sala;
+    this.material = material;
   }
 
-  novaReserva(comMaterial) {
-    if (comMaterial)
-      return new Reserva(this.reserva, this.sala).seReservado();
-    else
-      return new Reserva(this.reserva, this.sala).seReservadoComMaterial();
+  novaReserva() {
+    return new Reserva(this.reserva, this.sala, this.material).seReservado();
   }
 }
 module.exports = ReservaFactory;

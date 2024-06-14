@@ -1,7 +1,8 @@
 class Reserva {
-  constructor(reserva, sala) {
+  constructor(reserva, sala, material) {
     this.reserva = reserva;
     this.sala = sala;
+    this.material = material;
     this.reservado = false;
   }
 

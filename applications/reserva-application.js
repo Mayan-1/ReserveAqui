@@ -1,9 +1,10 @@
 const ReservaFactory = require("../factories/reservaFactory");
 
 class ReservaApplication {
-  constructor(reservaRepository, salaRepository) {
+  constructor(reservaRepository, salaRepository, materialRepository) {
     this.reservaRepository = reservaRepository;
     this.salaRepository = salaRepository;
+    this.materialRepository = materialRepository;
   }
 
   create = async (reserva) => {
@@ -28,10 +29,11 @@ class ReservaApplication {
 
   novaReserva = async (data) => {
     let reservaDb = await this.reservaRepository.buscarPorData(
-      data.dataReserva
+      data.data_reserva
     );
     let salaDb = await this.salaRepository.get(data.codigo_sala_fk);
-    let factory = new ReservaFactory(reservaDb, salaDb);
+    let materialDb = await this.materialRepository.get(data.codigo_material_fk);
+    let factory = new ReservaFactory(reservaDb, salaDb, materialDb);
     let reserva = factory.novaReserva();
     return reserva;
   };

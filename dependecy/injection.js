@@ -76,7 +76,8 @@ const salaFacade = new SalaFacade(salaApplication);
 const reservaRepository = new ReservaRepositoryMySql();
 const reservaApplication = new ReservaApplication(
   reservaRepository,
-  salaRepository
+  salaRepository,
+  materialRepository
 );
 const reservaFacade = new ReservaFacade(reservaApplication);
 

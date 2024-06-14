@@ -9,7 +9,7 @@ class ReservaRepositoryMySql extends IReservaRepository {
 
   create = async (reserva) => {
     await Reserva.create({
-      data: reserva.data,
+      data_reserva: reserva.data_reserva,
       codigo_sala_fk: reserva.codigo_sala_fk,
       codigo_material_fk: reserva.codigo_material_fk,
       codigo_professor_fk: reserva.codigo_professor_fk,
