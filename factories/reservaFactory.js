@@ -1,17 +1,16 @@
-const ReservaFacade = require("./facade/reserva-facade.js");
+const Reserva = require("../entities/reserva.js");
 
 class ReservaFactory {
-  constructor(reserva) {
+  constructor(reserva, sala) {
     this.reserva = reserva;
+    this.sala = sala;
   }
 
-  novaReserva(reserva) {
-    const reservaFacade = new ReservaFacade();
-    if (this.reservaFacade.buscarPorData() != null) {
-      reservaFacade.create(reserva);
-    } else {
-      console.log("Já existe agendamento para essa data!");
-    }
+  novaReserva(comMaterial) {
+    if (comMaterial)
+      return new Reserva(this.reserva, this.sala).seReservado();
+    else
+      return new Reserva(this.reserva, this.sala).seReservadoComMaterial();
   }
 }
 module.exports = ReservaFactory;

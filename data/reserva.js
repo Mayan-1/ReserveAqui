@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         unique: true,
       },
-      data: {
+      data_reserva: {
         type: DataTypes.DATE,
         allowNull: false,
       },
@@ -17,12 +17,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-
       codigo_material_fk: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-
       codigo_professor_fk: {
         type: DataTypes.INTEGER,
         allowNull: false,

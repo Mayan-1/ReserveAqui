@@ -45,8 +45,9 @@ class ReservaRepositoryMySql extends IReservaRepository {
 
   buscarPorData = async (data) => {
     let reserva = await Reserva.findOne({
-      where: { data: data },
+      where: { data_reserva: data },
     });
+
     return reserva;
   };
 }

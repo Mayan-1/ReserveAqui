@@ -26,6 +26,10 @@ class IReservaRepository {
   remove = async () => {
     throw new Error("Esse método não pode ser chamado");
   };
+
+  buscarPorData = async (data) => {
+    throw new Error("Esse método não pode ser chamado")
+  };
 }
 
 module.exports = IReservaRepository;

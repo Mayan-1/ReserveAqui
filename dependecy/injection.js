@@ -69,22 +69,25 @@ const professorRepository = new ProfessorRepositoryMySql();
 const professorApplication = new ProfessorApplication(professorRepository);
 const professorFacade = new ProfessorFacade(professorApplication);
 
-const reservaRepository = new ReservaRepositoryMySql();
-const reservaApplication = new ReservaApplication(reservaRepository);
-const reservaFacade = new ReservaFacade(reservaApplication);
-
 const salaRepository = new SalaRepositoryMySql();
 const salaApplication = new SalaApplication(salaRepository);
 const salaFacade = new SalaFacade(salaApplication);
 
+const reservaRepository = new ReservaRepositoryMySql();
+const reservaApplication = new ReservaApplication(
+  reservaRepository,
+  salaRepository
+);
+const reservaFacade = new ReservaFacade(reservaApplication);
 
-
-module.exports = { instituicaoFacade,
-administradorFacade,
-alunoFacade,
-faltaFacade,
-materialFacade,
-presencaFacade,
-professorFacade,
-reservaFacade,
-salaFacade };
+module.exports = {
+  instituicaoFacade,
+  administradorFacade,
+  alunoFacade,
+  faltaFacade,
+  materialFacade,
+  presencaFacade,
+  professorFacade,
+  reservaFacade,
+  salaFacade,
+};

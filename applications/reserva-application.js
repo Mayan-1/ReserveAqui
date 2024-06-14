@@ -1,6 +1,9 @@
+const ReservaFactory = require("../factories/reservaFactory");
+
 class ReservaApplication {
-  constructor(reservaRepository) {
+  constructor(reservaRepository, salaRepository) {
     this.reservaRepository = reservaRepository;
+    this.salaRepository = salaRepository;
   }
 
   create = async (reserva) => {
@@ -23,8 +26,14 @@ class ReservaApplication {
     return await this.reservaRepository.remove(codigo);
   };
 
-  buscarPorData = async (data) => {
-    return await this.reservaRepository.buscarPorData(data);
+  novaReserva = async (data) => {
+    let reservaDb = await this.reservaRepository.buscarPorData(
+      data.dataReserva
+    );
+    let salaDb = await this.salaRepository.get(data.codigo_sala_fk);
+    let factory = new ReservaFactory(reservaDb, salaDb);
+    let reserva = factory.novaReserva();
+    return reserva;
   };
 }
 

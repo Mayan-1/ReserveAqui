@@ -11,6 +11,7 @@ const sequelize = new Sequelize(
     host: dbConfig.HOST,
     dialect: dbConfig.DIALECT,
     port: dbConfig.PORT,
+    timezone: dbConfig.TIMEZONE,
   }
 );
 

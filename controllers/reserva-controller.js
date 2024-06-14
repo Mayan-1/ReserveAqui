@@ -30,8 +30,8 @@ module.exports.delete = async (req, res) => {
   res.status(200).json({ status: "Reserva deletada!" });
 };
 
-module.exports.buscarPorData = async (req, res) => {
-  let data = req.params.data;
-  let reserva = await reservaFacade.buscarPorData(data);
-  res.status(reserva);
+module.exports.novaReserva = async (req, res) => {
+  let body = req.body;
+  let reserva = await reservaFacade.novaReserva(body);
+  res.status(200).json(reserva);
 };

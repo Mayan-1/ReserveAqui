@@ -23,8 +23,8 @@ class ReservaFacade {
     return await this.reservaApplication.remove(codigo);
   };
 
-  buscarPorData = async (data) => {
-    return await this.reservaApplication.buscarPorData(data);
+  novaReserva = async (data) => {
+    return await this.reservaApplication.novaReserva(data);
   };
 }
 
