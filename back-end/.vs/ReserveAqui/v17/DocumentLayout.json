@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\ReserveAqui\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{078FCFF3-CE40-4963-9856-A5001397DF7F}|ReserveAqui\\ReserveAqui.csproj|c:\\dev\\reserveaqui\\reserveaqui\\repositories\\reservas\\genericreservas\\ireservasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{078FCFF3-CE40-4963-9856-A5001397DF7F}|ReserveAqui\\ReserveAqui.csproj|solutionrelative:reserveaqui\\repositories\\reservas\\genericreservas\\ireservasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IReservasRepository.cs",
+              "DocumentMoniker": "C:\\dev\\ReserveAqui\\ReserveAqui\\Repositories\\Reservas\\GenericReservas\\IReservasRepository.cs",
+              "RelativeDocumentMoniker": "ReserveAqui\\Repositories\\Reservas\\GenericReservas\\IReservasRepository.cs",
+              "ToolTip": "C:\\dev\\ReserveAqui\\ReserveAqui\\Repositories\\Reservas\\GenericReservas\\IReservasRepository.cs",
+              "RelativeToolTip": "ReserveAqui\\Repositories\\Reservas\\GenericReservas\\IReservasRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T19:35:18.11Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
