@@ -1,6 +1,6 @@
 ﻿using ReserveAqui.Models;
 
-namespace ReserveAqui.Repositories.SalaRepository;
+namespace ReserveAqui.Repositories.SalasRepository;
 
 public interface ISalaRepository : IRepository<Sala>
 {}

@@ -1,7 +1,7 @@
 ﻿using ReserveAqui.Config;
 using ReserveAqui.Models;
 
-namespace ReserveAqui.Repositories.SalaRepository;
+namespace ReserveAqui.Repositories.SalasRepository;
 
 public class SalaRepository : Repository<Sala>, ISalaRepository
 {

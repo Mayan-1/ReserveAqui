@@ -2575,11 +2575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\ReserveAqui\\ReserveAqui\\ReserveAqui.csproj",
+      "projectUniqueName": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj",
       "projectName": "ReserveAqui",
-      "projectPath": "C:\\dev\\ReserveAqui\\ReserveAqui\\ReserveAqui.csproj",
+      "projectPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj",
       "packagesPath": "C:\\Users\\Mayam\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\ReserveAqui\\ReserveAqui\\obj\\",
+      "outputPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mayam\\AppData\\Roaming\\NuGet\\NuGet.Config",

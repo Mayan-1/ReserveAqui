@@ -1,4 +1,4 @@
-﻿namespace ReserveAqui.Repositories.Reservas.GenericReservas;
+﻿namespace ReserveAqui.Repositories.ReservasRepository.GenericReservas;
 
 public interface IReservasRepository<TEntity> where TEntity : class
 {

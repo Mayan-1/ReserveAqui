@@ -1,6 +1,6 @@
 ﻿using ReserveAqui.Models;
 
-namespace ReserveAqui.Repositories.MaterialRepository;
+namespace ReserveAqui.Repositories.MateriaisRepository;
 
 public interface IMaterialRepository : IRepository<Material>
 {}

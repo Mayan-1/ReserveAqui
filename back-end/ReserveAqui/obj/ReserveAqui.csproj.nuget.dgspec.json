@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\ReserveAqui\\reserveaqui\\ReserveAqui.csproj": {}
+    "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj": {}
   },
   "projects": {
-    "C:\\dev\\ReserveAqui\\reserveaqui\\ReserveAqui.csproj": {
+    "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\ReserveAqui\\reserveaqui\\ReserveAqui.csproj",
+        "projectUniqueName": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj",
         "projectName": "ReserveAqui",
-        "projectPath": "C:\\dev\\ReserveAqui\\reserveaqui\\ReserveAqui.csproj",
+        "projectPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\ReserveAqui.csproj",
         "packagesPath": "C:\\Users\\Mayam\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\ReserveAqui\\reserveaqui\\obj\\",
+        "outputPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mayam\\AppData\\Roaming\\NuGet\\NuGet.Config",

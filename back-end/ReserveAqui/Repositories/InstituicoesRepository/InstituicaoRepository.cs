@@ -2,7 +2,7 @@
 using ReserveAqui.Config;
 using ReserveAqui.Models;
 
-namespace ReserveAqui.Repositories.InstituicaoRepository;
+namespace ReserveAqui.Repositories.InstituicoesRepository;
 
 public class InstituicaoRepository : Repository<Instituicao>, IInstituicaoRepository
 {

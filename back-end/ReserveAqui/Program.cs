@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ReserveAqui.Config;
+using ReserveAqui.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,9 @@ string? stringMySql = builder.Configuration.GetConnectionString("DefaultConnecti
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(stringMySql,
     ServerVersion.AutoDetect(stringMySql)));
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

@@ -1,7 +1,7 @@
 ﻿using ReserveAqui.Config;
 using ReserveAqui.Models;
 
-namespace ReserveAqui.Repositories.MaterialRepository;
+namespace ReserveAqui.Repositories.MateriaisRepository;
 
 public class MaterialRepository : Repository<Material>, IMaterialRepository
 {
