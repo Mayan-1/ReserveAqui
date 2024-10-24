@@ -8,12 +8,12 @@ public class ReservaMaterialRepository : Repository<ReservaMaterial>, IReservaMa
 {
     public ReservaMaterialRepository(AppDbContext context) : base(context) 
     {}
-    public async Task<bool> ExisteReserva(DateTime inicio, DateTime fim)
-    {
-        return await _context.ReservaMaterial
-                .AnyAsync(r => (r.HoraInicio < fim && r.HoraFim > inicio));
+    //public async Task<bool> ExisteReserva(DateTime inicio, DateTime fim)
+    //{
+    //    return await _context.ReservaMaterial
+    //            .AnyAsync(r => (r.HoraInicio < fim && r.HoraFim > inicio));
         
-    }
+    //}
 
     public async Task<IEnumerable<ReservaMaterial>> GetAllReserva()
     {

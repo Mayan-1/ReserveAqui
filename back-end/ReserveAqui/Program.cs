@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ReserveAqui.Config;
+using ReserveAqui.Logging;
 using ReserveAqui.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Logging.AddProvider(new CustomerLoggerProvider(new CustomerLoggerProviderConfiguration
+{
+    LogLevel = LogLevel.Information
+}));
 
 var app = builder.Build();
 
