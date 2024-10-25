@@ -8,11 +8,11 @@ public class ReservaSalaRepository : Repository<ReservaSala>, IReservaSalaReposi
 {
     public ReservaSalaRepository(AppDbContext context) : base(context)
     {}
-    //public async Task<bool> ExisteReserva(DateTime inicio, DateTime fim)
-    //{
-    //    return await _context.ReservaSala
-    //        .AnyAsync(r => (r.HoraInicio < fim && r.HoraFim > inicio));
-    //}
+    public async Task<bool> ExisteReserva(DateOnly data, string turno)
+    {
+        return await _context.ReservaSala
+            .AnyAsync(r => (r.Turno == turno && r.Data > data));
+    }
 
     public async Task<IEnumerable<ReservaSala>> GetAllReserva()
     {

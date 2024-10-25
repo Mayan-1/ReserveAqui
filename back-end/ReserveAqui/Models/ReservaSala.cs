@@ -5,6 +5,7 @@ namespace ReserveAqui.Models;
 public class ReservaSala
 {
     public int Id { get; set; }
+    public DateOnly Data { get; set; }
     public string? Turno { get; set; }
     public string? Descricao { get; set; }
     public Sala? Sala { get; set; }

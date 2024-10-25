@@ -12,8 +12,8 @@ using ReserveAqui.Config;
 namespace ReserveAqui.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241014172034_Initial")]
-    partial class Initial
+    [Migration("20241025032804_InitialSqlServer")]
+    partial class InitialSqlServer
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,9 +21,9 @@ namespace ReserveAqui.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.10")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("ReserveAqui.Models.Administrador", b =>
                 {
@@ -31,25 +31,25 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cpf")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("InstituicaoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefone")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -64,10 +64,10 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -80,10 +80,10 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -96,10 +96,10 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -112,25 +112,25 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cpf")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("InstituicaoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefone")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -160,22 +160,22 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateOnly>("Data")
+                        .HasColumnType("date");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("HoraFim")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("HoraInicio")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MaterialId")
                         .HasColumnType("int");
 
                     b.Property<int?>("ProfessorId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Turno")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -192,22 +192,22 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateOnly>("Data")
+                        .HasColumnType("date");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("HoraFim")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime>("HoraInicio")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ProfessorId")
                         .HasColumnType("int");
 
                     b.Property<int?>("SalaId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Turno")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -224,10 +224,10 @@ namespace ReserveAqui.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
-                        .HasColumnType("longtext");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

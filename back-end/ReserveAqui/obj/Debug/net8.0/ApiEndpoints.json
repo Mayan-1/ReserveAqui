@@ -577,6 +577,32 @@
     ]
   },
   {
+    "ContainingType": "ReserveAqui.Controllers.ReservaSalaController",
+    "Method": "Get",
+    "RelativePath": "api/ReservaSala/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Models.ReservaSala",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ReserveAqui.Controllers.SalaController",
     "Method": "GetAll",
     "RelativePath": "api/Sala",

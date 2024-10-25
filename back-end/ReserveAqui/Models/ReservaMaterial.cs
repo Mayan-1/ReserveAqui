@@ -3,6 +3,7 @@
 public class ReservaMaterial
 {
     public int Id { get; set; }
+    public DateOnly Data { get; set; }
     public string? Turno { get; set; }
     public string? Descricao { get; set; }
     public Material? Material { get; set; }
