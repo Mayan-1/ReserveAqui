@@ -136,8 +136,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "instituicao",
-        "Type": "ReserveAqui.Models.Instituicao",
+        "Name": "instituicaoDto",
+        "Type": "ReserveAqui.DTOs.InstituicaoDto",
         "IsRequired": true
       }
     ],
@@ -567,6 +567,52 @@
     "ReturnTypes": [
       {
         "Type": "ReserveAqui.Models.Instituicao",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.Controllers.ReservaSalaController",
+    "Method": "GetAll",
+    "RelativePath": "api/ReservaSala",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ReserveAqui.Models.ReservaSala, ReserveAqui, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.Controllers.ReservaSalaController",
+    "Method": "Create",
+    "RelativePath": "api/ReservaSala",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservaSalaDto",
+        "Type": "ReserveAqui.DTOs.ReservaSalaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Models.ReservaSala",
         "MediaTypes": [
           "text/plain",
           "application/json",

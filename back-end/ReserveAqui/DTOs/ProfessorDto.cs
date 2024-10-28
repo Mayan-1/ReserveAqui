@@ -10,6 +10,6 @@ public class ProfessorDto
     public string? Senha { get; set; }
     public string? Cpf { get; set; }
     public string? Telefone { get; set; }
-    public ICollection<string>? MateriasNomes { get; set; }
+    public ICollection<string> MateriasNomes { get; set; }
 
 }

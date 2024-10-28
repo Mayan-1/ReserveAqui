@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ReserveAqui.DTOs;
 using ReserveAqui.Models;
 using ReserveAqui.Repositories;
 
@@ -42,9 +43,9 @@ public class InstituicaoController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Instituicao>> Create(Instituicao instituicao)
+    public async Task<ActionResult<Instituicao>> Create(InstituicaoDto instituicaoDto)
     {
-        if(instituicao is null)
+        if(instituicaoDto is null)
         {
             return BadRequest("Dados inválidos");
         }
@@ -53,6 +54,11 @@ public class InstituicaoController : ControllerBase
         {
             return BadRequest(ModelState);
         }
+
+        var instituicao = new Instituicao
+        {
+            Nome = instituicaoDto.Nome,
+        };
 
         await _uof.Instituicoes.AddAsync(instituicao);
         await _uof.Complete();

@@ -95,12 +95,14 @@ public class ProfessorController : ControllerBase
         }
 
         var materias = await _uof.Materias.GetAllAsync();
-        var materiasSelecionadas = materias.Where(c => professorDto.MateriasNomes.Contains(c.Nome)).ToList();
+        var materiasSelecionadas = materias
+            .Where(c => professorDto.MateriasNomes.Contains(c.Nome))
+            .ToList();
 
         var professor = new Professor
         {
             Nome = professorDto.Nome,
-            Cpf = professorDto.Senha,
+            Cpf = professorDto.Cpf,
             Senha = professorDto.Senha,
             Email = professorDto.Email,
             Telefone = professorDto.Telefone,
@@ -111,7 +113,7 @@ public class ProfessorController : ControllerBase
         await _uof.Professores.AddAsync(professor);
         await _uof.Complete();
 
-        return Ok("Professor removido com sucesso");
+        return Ok(professor);
     }
 
     

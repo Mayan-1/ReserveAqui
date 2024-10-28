@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ReserveAqui.DTOs;
 using ReserveAqui.Models;
 using ReserveAqui.Repositories;
 
@@ -28,5 +29,39 @@ public class ReservaSalaController : ControllerBase
             return BadRequest("Reserva não encontrada");
         }
         return Ok(reserva);
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ReservaSala>>> GetAll()
+    {
+        var reservas = await _uof.ReservasSalas.GetAllAsync();
+        if (reservas == null || !reservas.Any())
+        {
+            return BadRequest("Nenhuma reserva cadastrada");
+        }
+        return Ok(reservas);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<ReservaSala>> Create(ReservaSalaDto reservaSalaDto)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        var sala = await _uof.Salas.FindAsync(s => s.Nome == reservaSalaDto.SalaNome);
+        var professor = await _uof.Professores.FindAsync(p => p.Nome == reservaSalaDto.ProfessorNome);
+
+        var reserva = new ReservaSala
+        {
+            Data = reservaSalaDto.Data,
+            Turno = reservaSalaDto.Turno,
+            Descricao = reservaSalaDto.Descricao,
+            Sala = sala,
+            Professor = professor,
+        };
+
+        return Ok(reserva);
+        
     }
 }
