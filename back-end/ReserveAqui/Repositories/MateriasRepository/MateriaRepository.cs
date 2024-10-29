@@ -13,7 +13,6 @@ public class MateriaRepository : Repository<Materia>, IMateriaRepository
     {
         var materias = await _context.Materia
             .Include(p => p.Professores)
-            .AsNoTracking()
             .ToListAsync();
         return materias;
     }

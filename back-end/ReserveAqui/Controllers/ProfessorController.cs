@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ReserveAqui.Config;
 using ReserveAqui.DTOs;
 using ReserveAqui.Models;
 using ReserveAqui.Repositories;
@@ -12,6 +13,7 @@ namespace ReserveAqui.Controllers;
 public class ProfessorController : ControllerBase
 {
     private readonly IUnitOfWork _uof;
+    private readonly AppDbContext _context;
 
     public ProfessorController(IUnitOfWork uof)
     {
@@ -21,7 +23,7 @@ public class ProfessorController : ControllerBase
     [HttpGet("{id:int}", Name = "ObterProfessor")]
     public async Task<ActionResult<Professor>> Get(int id)
     {
-        var professor = await _uof.Professores.GetAsync(id);
+        var professor = await _uof.Professores.GetProfessorAsync(id);
 
         if (professor is null)
         {
@@ -34,7 +36,7 @@ public class ProfessorController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Professor>>> GetAll()
     {
-        var professores = await _uof.Professores.GetAllAsync();
+        var professores = await _uof.Professores.GetAllProfessoresAsync();
 
 
         if (professores is null || !professores.Any())
@@ -46,9 +48,9 @@ public class ProfessorController : ControllerBase
     }
 
     [HttpPut("{id:int}, {idInstituicao:int}")]
-    public async Task<ActionResult<Instituicao>> Update(ProfessorDto professorDto, int id, int idInstituicao)
+    public async Task<ActionResult<Professor>> Update(ProfessorDto professorDto, int id, int idInstituicao)
     {
-        var professor = await _uof.Professores.GetAsync(id);
+        var professor = await _uof.Professores.GetProfessorAsync(id);
         var instituicao = await _uof.Instituicoes.GetAsync(idInstituicao);
 
         if (professor is null)
@@ -63,8 +65,11 @@ public class ProfessorController : ControllerBase
         professor.Telefone = professorDto.Telefone;
         professor.Instituicao = instituicao;
 
-        var materias = await _uof.Materias.GetAllAsync();
-        var materiasSelecionadas = materias.Where(c => professorDto.MateriasNomes.Contains(c.Nome)).ToList();
+        var materias = await _uof.Materias.GetAllMateriasAsync();
+        var materiasSelecionadas = materias
+            .Where(c => professorDto.MateriasNomes
+            .Contains(c.Nome))
+            .ToList();
 
         professor.Materias.Clear();
         foreach (var item in materiasSelecionadas)
@@ -87,6 +92,8 @@ public class ProfessorController : ControllerBase
             return BadRequest();
         }
 
+    
+
         var instituicao = await _uof.Instituicoes.GetAsync(idInstituicao);
 
         if (instituicao == null)
@@ -94,10 +101,15 @@ public class ProfessorController : ControllerBase
             return NotFound("Instituição não encontrada");
         }
 
-        var materias = await _uof.Materias.GetAllAsync();
+        var materias = await _uof.Materias.GetAllMateriasAsync();
         var materiasSelecionadas = materias
             .Where(c => professorDto.MateriasNomes.Contains(c.Nome))
             .ToList();
+
+        if (materiasSelecionadas.Count != professorDto.MateriasNomes.Count)
+        {
+            return BadRequest("Uma ou mais matérias especificadas não foram encontradas.");
+        }
 
         var professor = new Professor
         {
@@ -113,7 +125,22 @@ public class ProfessorController : ControllerBase
         await _uof.Professores.AddAsync(professor);
         await _uof.Complete();
 
-        return Ok(professor);
+        return new CreatedAtRouteResult("ObterProfessor", 
+            new { id = professor.Id}, professor);
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<ActionResult<Professor>> Remove(int id)
+    {
+        var professor = await _uof.Professores.GetProfessorAsync(id);
+        if (professor == null)
+        {
+            return NotFound("Professor não encontrado");
+        }
+
+        await _uof.Professores.RemoveAsync(professor);
+        await _uof.Complete();
+        return Ok("Professor removido com sucesso");
     }
 
     
