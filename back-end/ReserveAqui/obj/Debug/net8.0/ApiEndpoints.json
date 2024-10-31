@@ -511,6 +511,37 @@
   },
   {
     "ContainingType": "ReserveAqui.Controllers.ProfessorController",
+    "Method": "Update",
+    "RelativePath": "api/Professor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "professorDto",
+        "Type": "ReserveAqui.DTOs.ProfessorDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Models.Professor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.Controllers.ProfessorController",
     "Method": "Remove",
     "RelativePath": "api/Professor/{id}",
     "HttpMethod": "DELETE",
@@ -537,42 +568,6 @@
   },
   {
     "ContainingType": "ReserveAqui.Controllers.ProfessorController",
-    "Method": "Update",
-    "RelativePath": "api/Professor/{id}, {idInstituicao}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "professorDto",
-        "Type": "ReserveAqui.DTOs.ProfessorDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "idInstituicao",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "ReserveAqui.Models.Professor",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "ReserveAqui.Controllers.ProfessorController",
     "Method": "Create",
     "RelativePath": "api/Professor/{idInstituicao}",
     "HttpMethod": "POST",
@@ -580,14 +575,44 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "professorDto",
-        "Type": "ReserveAqui.DTOs.ProfessorDto",
-        "IsRequired": true
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Senha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cpf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Telefone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MateriasNomes",
+        "Type": "System.Collections.Generic.ICollection\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       },
       {
         "Name": "idInstituicao",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "foto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

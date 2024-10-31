@@ -1,8 +1,12 @@
-﻿namespace ReserveAqui.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ReserveAqui.Models;
 
 public class Material
 {
+    [Required]
     public int Id { get; set; }
-    public string? Nome { get; set; }
+    [Required]
+    public string Nome { get; set; } = string.Empty;
 
 }

@@ -8,7 +8,7 @@ public class ReservaMaterialRepository : Repository<ReservaMaterial>, IReservaMa
 {
     public ReservaMaterialRepository(AppDbContext context) : base(context) 
     {}
-    public async Task<bool> ExisteReserva(DateOnly data, string turno)
+    public async Task<bool> ExisteReserva(DateOnly data, Turno turno)
     {
         return await _context.ReservaMaterial
                 .AnyAsync(r => (r.Turno == turno && r.Data == data));

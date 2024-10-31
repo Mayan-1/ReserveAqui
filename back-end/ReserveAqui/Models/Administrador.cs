@@ -1,12 +1,28 @@
-﻿namespace ReserveAqui.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ReserveAqui.Models;
 
 public class Administrador
 {
+    [Required]
     public int Id { get; set; }
-    public string? Nome { get; set; }
-    public string? Email { get; set; }
-    public string? Senha { get; set; }
-    public string? Cpf { get; set; }
-    public string? Telefone { get; set; }
+    [Required]
+    [StringLength(60)]
+    public string Nome { get; set; } = string.Empty;
+    [Required]
+    [StringLength(60)]
+    public string Email { get; set; } = string.Empty;
+    [Required]
+    [StringLength(15, MinimumLength = 8)]
+    public string Senha { get; set; } = string.Empty;
+    [Required]
+    [StringLength(11)]
+    public string Cpf { get; set; } = string.Empty;
+    [Required]
+    [StringLength(11)]
+    public string Telefone { get; set; } = string.Empty;
+    [Required]
+    public string Foto { get; set; } = string.Empty;
+    [Required]
     public Instituicao? Instituicao { get; set; }
 }

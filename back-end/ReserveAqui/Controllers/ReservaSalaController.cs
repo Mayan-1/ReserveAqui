@@ -34,7 +34,7 @@ public class ReservaSalaController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ReservaSala>>> GetAll()
     {
-        var reservas = await _uof.ReservasSalas.GetAllAsync();
+        var reservas = await _uof.ReservasSalas.GetAllReserva();
         if (reservas == null || !reservas.Any())
         {
             return BadRequest("Nenhuma reserva cadastrada");
@@ -61,6 +61,8 @@ public class ReservaSalaController : ControllerBase
             Professor = professor,
         };
 
+        await _uof.ReservasSalas.AddAsync(reserva);
+        await _uof.Complete();
         return Ok(reserva);
         
     }

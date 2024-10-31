@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ReserveAqui.Models;
+using ReserveAqui.Modelsl;
 
 namespace ReserveAqui.Config;
 
@@ -16,6 +17,7 @@ public class AppDbContext : DbContext
     public DbSet<Materia> Materia { get; set; }
     public DbSet<ReservaSala> ReservaSala { get; set; }
     public DbSet<ReservaMaterial> ReservaMaterial { get; set; }
+    public DbSet<Turma> Turma { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

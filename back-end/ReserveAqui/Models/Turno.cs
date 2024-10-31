@@ -2,7 +2,7 @@
 
 namespace ReserveAqui.Models;
 
-public class Sala
+public class Turno
 {
     [Required]
     public int Id { get; set; }

@@ -5,6 +5,8 @@ using ReserveAqui.Config;
 using ReserveAqui.DTOs;
 using ReserveAqui.Models;
 using ReserveAqui.Repositories;
+using ReserveAqui.Services;
+using System.IO;
 
 namespace ReserveAqui.Controllers;
 
@@ -13,11 +15,14 @@ namespace ReserveAqui.Controllers;
 public class ProfessorController : ControllerBase
 {
     private readonly IUnitOfWork _uof;
-    private readonly AppDbContext _context;
+    private IFileUpload _fileUpload;
+    private ILogger<ProfessorController> _logger;
 
-    public ProfessorController(IUnitOfWork uof)
+    public ProfessorController(IUnitOfWork uof, ILogger<ProfessorController> logger, IFileUpload fileUpload)
     {
         _uof = uof;
+        _logger = logger;
+        _fileUpload = fileUpload;
     }
 
     [HttpGet("{id:int}", Name = "ObterProfessor")]
@@ -47,11 +52,11 @@ public class ProfessorController : ControllerBase
         return Ok(professores);
     }
 
-    [HttpPut("{id:int}, {idInstituicao:int}")]
-    public async Task<ActionResult<Professor>> Update(ProfessorDto professorDto, int id, int idInstituicao)
+    [HttpPut("{id:int}")]
+    public async Task<ActionResult<Professor>> Update(ProfessorDto professorDto, int id)
     {
+        _logger.LogWarning("ProfessorController --- UPDATE");
         var professor = await _uof.Professores.GetProfessorAsync(id);
-        var instituicao = await _uof.Instituicoes.GetAsync(idInstituicao);
 
         if (professor is null)
         {
@@ -63,7 +68,6 @@ public class ProfessorController : ControllerBase
         professor.Email = professorDto.Email;
         professor.Senha = professorDto.Senha;
         professor.Telefone = professorDto.Telefone;
-        professor.Instituicao = instituicao;
 
         var materias = await _uof.Materias.GetAllMateriasAsync();
         var materiasSelecionadas = materias
@@ -84,15 +88,21 @@ public class ProfessorController : ControllerBase
     }
 
     [HttpPost("{idInstituicao:int}")]
-    public async Task<ActionResult<Instituicao>> Create(ProfessorDto professorDto, int idInstituicao)
+    public async Task<ActionResult<Instituicao>> Create([FromForm]ProfessorDto professorDto,
+        int idInstituicao, 
+        IFormFile foto)
     {
+        if(foto == null)
+        {
+            return BadRequest("Imagem obrigatória");
+        }
 
         if (!ModelState.IsValid)
         {
             return BadRequest();
         }
 
-    
+        var caminhoImagem = await _fileUpload.SalvarImagemAsync(foto);
 
         var instituicao = await _uof.Instituicoes.GetAsync(idInstituicao);
 
@@ -120,6 +130,7 @@ public class ProfessorController : ControllerBase
             Telefone = professorDto.Telefone,
             Materias = materiasSelecionadas,
             Instituicao = instituicao,
+            Foto = caminhoImagem,
         };
 
         await _uof.Professores.AddAsync(professor);
@@ -142,6 +153,8 @@ public class ProfessorController : ControllerBase
         await _uof.Complete();
         return Ok("Professor removido com sucesso");
     }
+
+
 
     
 
