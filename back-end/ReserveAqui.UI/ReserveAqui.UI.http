@@ -1,0 +1,6 @@
+@ReserveAqui.UI_HostAddress = http://localhost:5182
+
+GET {{ReserveAqui.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

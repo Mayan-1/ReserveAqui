@@ -1,0 +1,12 @@
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.AssemblyInfoInputs.cache
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.AssemblyInfo.cs
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.sourcelink.json
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\bin\Debug\net8.0\ReserveAqui.Core.deps.json
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\bin\Debug\net8.0\ReserveAqui.Core.dll
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\bin\Debug\net8.0\ReserveAqui.Core.pdb
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.dll
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\refint\ReserveAqui.Core.dll
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ReserveAqui.Core.pdb
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.Core\obj\Debug\net8.0\ref\ReserveAqui.Core.dll

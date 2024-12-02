@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
+    "Method": "Criar",
+    "RelativePath": "api/Professor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Professores.Criar.CriarProfessorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Professores.Criar.CriarProfessorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

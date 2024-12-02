@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\materias\\criar\\criarmateriahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\materias\\criar\\criarmateriahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\materias\\criar\\criarmateriamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\materias\\criar\\criarmateriamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\materias\\criar\\criarmateriavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\materias\\criar\\criarmateriavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\materias\\criar\\criarmateriaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\materias\\criar\\criarmateriaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\materias\\criar\\criarmateriarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\materias\\criar\\criarmateriarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\reserveaqui.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\reserveaqui.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\reserveaqui.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\reserveaqui.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\identity\\user\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\identity\\user\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CriarMateriaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:09:24.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CriarMateriaMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaMapper.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaMapper.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaMapper.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:08:26.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CriarMateriaValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaValidator.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaValidator.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaValidator.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:07:32.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CriarMateriaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:07:01.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CriarMateriaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Materias\\Criar\\CriarMateriaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:06:00.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReserveAqui.UI",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\ReserveAqui.UI.csproj",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\ReserveAqui.UI.csproj",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\ReserveAqui.UI.csproj",
+              "RelativeToolTip": "ReserveAqui.UI\\ReserveAqui.UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-02T17:42:44.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfessorController.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:40:38.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReserveAqui.Application",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\ReserveAqui.Application.csproj",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\ReserveAqui.Application.csproj",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\ReserveAqui.Application.csproj",
+              "RelativeToolTip": "ReserveAqui.Application\\ReserveAqui.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-02T17:34:54.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Identity\\User\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Infra\\Identity\\User\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Identity\\User\\ApplicationUser.cs",
+              "RelativeToolTip": "ReserveAqui.Infra\\Identity\\User\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:34:17.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CriarProfessorHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorHandler.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAkwCsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T16:16:48.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CriarProfessorValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorValidator.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorValidator.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorValidator.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T13:03:35.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CriarProfessorMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:52:53.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Professor.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\Professor.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Core\\Models\\Professor.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\Professor.cs",
+              "RelativeToolTip": "ReserveAqui.Core\\Models\\Professor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:50:19.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CriarProfessorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:49:04.98Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
