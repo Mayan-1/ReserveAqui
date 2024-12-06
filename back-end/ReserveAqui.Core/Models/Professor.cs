@@ -10,6 +10,7 @@ public class Professor : BaseEntity
     public string Senha { get; set; } = string.Empty;
     public string Cpf { get; set; } = string.Empty;
     public string Telefone { get; set; } = string.Empty;
+    public int? MateriaId { get; set; }
     public Materia? Materia { get; set; }
     public Instituicao? Instituicao { get; set; }
 }

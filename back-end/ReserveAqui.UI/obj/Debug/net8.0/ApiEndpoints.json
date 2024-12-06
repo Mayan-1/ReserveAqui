@@ -1,5 +1,302 @@
 [
   {
+    "ContainingType": "ReserveAqui.UI.Controllers.AdministradorController",
+    "Method": "ObterTodos",
+    "RelativePath": "api/Administrador",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[ReserveAqui.Application.UseCases.Administrador.Obter.ObterAdministradorResponse, ReserveAqui.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.AdministradorController",
+    "Method": "Criar",
+    "RelativePath": "api/Administrador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Administrador.Criar.CriarAdministradorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.AdministradorController",
+    "Method": "Obter",
+    "RelativePath": "api/Administrador/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Administrador.Obter.ObterAdministradorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.AdministradorController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Administrador/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Administrador.Atualizar.AtualizarAdministradorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.AdministradorController",
+    "Method": "Deletar",
+    "RelativePath": "api/Administrador/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.InstituicaoController",
+    "Method": "Criar",
+    "RelativePath": "api/Instituicao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Instituicoes.Criar.CriarInstituicaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.InstituicaoController",
+    "Method": "ObterTodas",
+    "RelativePath": "api/Instituicao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[ReserveAqui.Application.UseCases.Instituicoes.ObterTodos.ObterTodasInstituicoesResponse, ReserveAqui.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.InstituicaoController",
+    "Method": "Obter",
+    "RelativePath": "api/Instituicao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Instituicoes.Obter.ObterInstituicaoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.InstituicaoController",
+    "Method": "Deletar",
+    "RelativePath": "api/Instituicao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.InstituicaoController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Instituicao/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Instituicoes.Atualizar.AtualizarInstituicaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.MateriaController",
+    "Method": "Criar",
+    "RelativePath": "api/Materia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Materias.Criar.CriaMateriaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.MateriaController",
+    "Method": "ObterTodas",
+    "RelativePath": "api/Materia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.ICollection\u00601[[ReserveAqui.Application.UseCases.Materias.Obter.ObterMateriaResponse, ReserveAqui.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.MateriaController",
+    "Method": "Obter",
+    "RelativePath": "api/Materia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Materias.Obter.ObterMateriaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.MateriaController",
+    "Method": "Deletar",
+    "RelativePath": "api/Materia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.MateriaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Materia/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Materias.Atualizar.AtualizarMateriaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
     "Method": "Criar",
     "RelativePath": "api/Professor",
@@ -13,9 +310,19 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
+    "Method": "ObterTodos",
+    "RelativePath": "api/Professor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "ReserveAqui.Application.UseCases.Professores.Criar.CriarProfessorResponse",
+        "Type": "System.Collections.Generic.ICollection\u00601[[ReserveAqui.Application.UseCases.Professores.ObterTodos.ObterTodosProfessoresResponse, ReserveAqui.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -24,5 +331,78 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
+    "Method": "Obter",
+    "RelativePath": "api/Professor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Professores.ObterTodos.ObterTodosProfessoresResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
+    "Method": "Deletar",
+    "RelativePath": "api/Professor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ReserveAqui.Application.UseCases.Professores.Deletar.DeletarProfessorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReserveAqui.UI.Controllers.ProfessorController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Professor/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ReserveAqui.Application.UseCases.Professores.Atualizar.AtualizarProfessorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

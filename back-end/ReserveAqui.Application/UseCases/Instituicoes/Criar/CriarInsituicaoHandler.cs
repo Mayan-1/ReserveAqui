@@ -8,11 +8,11 @@ namespace ReserveAqui.Application.UseCases.Instituicoes.Criar;
 
 public class CriarInsituicaoHandler : IRequestHandler<CriarInstituicaoRequest, CriarInstituicaoResponse>
 {
-    private readonly Mapper _mapper;
+    private readonly IMapper _mapper;
     private readonly IInstituicaoRepository _instituicaoRepository;
     private readonly IUnitOfWork _uof;
 
-    public CriarInsituicaoHandler(Mapper mapper, IInstituicaoRepository instituicaoRepository, IUnitOfWork uof)
+    public CriarInsituicaoHandler(IMapper mapper, IInstituicaoRepository instituicaoRepository, IUnitOfWork uof)
     {
         _mapper = mapper;
         _instituicaoRepository = instituicaoRepository;

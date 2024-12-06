@@ -664,7 +664,8 @@ namespace ReserveAqui.Infra.Migrations
 
                     b.HasOne("ReserveAqui.Core.Models.Materia", "Materia")
                         .WithMany("Professores")
-                        .HasForeignKey("MateriaId");
+                        .HasForeignKey("MateriaId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Instituicao");
 

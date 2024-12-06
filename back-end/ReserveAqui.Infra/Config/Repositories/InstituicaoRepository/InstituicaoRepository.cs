@@ -1,4 +1,5 @@
-﻿using ReserveAqui.Core.Interfaces.Repositories.InstituicaoRepository;
+﻿using Microsoft.EntityFrameworkCore;
+using ReserveAqui.Core.Interfaces.Repositories.InstituicaoRepository;
 using ReserveAqui.Core.Models;
 using ReserveAqui.Infra.Config.Data;
 using System;
@@ -13,5 +14,11 @@ public class InstituicaoRepository : BaseRepository<Instituicao>, IInstituicaoRe
 {
     public InstituicaoRepository(AppDbContext context) : base(context)
     {
+    }
+
+    public async Task<Instituicao> ObterPorNome(string nome)
+    {
+        var instituicao = await Context.Instituicao.FirstOrDefaultAsync(x => x.Nome == nome);
+        return instituicao;
     }
 }

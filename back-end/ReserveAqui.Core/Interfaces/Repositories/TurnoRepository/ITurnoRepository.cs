@@ -9,4 +9,5 @@ namespace ReserveAqui.Core.Interfaces.Repositories.TurnoRepository;
 
 public interface ITurnoRepository : IBaseRepository<Turno>
 {
+    Task<Turno> ObterPorNome(string nome);
 }

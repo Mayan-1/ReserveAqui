@@ -11,9 +11,10 @@ public class ReservaMaterialRepository : BaseRepository<ReservaMaterial>, IReser
     {
     }
 
-    public async Task<ReservaMaterial> ObterReservaPorData(DateOnly data, CancellationToken cancellationToken)
+    public async Task<bool> ObterReservaPorData(DateOnly data, Turno turno, Material material, CancellationToken cancellationToken)
     {
-        var reserva = await Context.ReservaMaterial.FirstOrDefaultAsync(d => d.Data == data);
-        return reserva;
+        var reservaExiste = await Context.ReservaMaterial.AnyAsync(d => d.Data == data && d.Turno == turno && d.Material == material);
+        return reservaExiste;
+        
     }
 }

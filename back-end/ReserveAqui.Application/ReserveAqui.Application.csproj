@@ -20,4 +20,11 @@
 	<ProjectReference Include="..\ReserveAqui.Infra\ReserveAqui.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCases\ReservaSala\" />
+    <Folder Include="UseCases\Turno\Atualizar\" />
+    <Folder Include="UseCases\Turno\Deletar\" />
+    <Folder Include="UseCases\Turno\Obter\" />
+  </ItemGroup>
+
 </Project>

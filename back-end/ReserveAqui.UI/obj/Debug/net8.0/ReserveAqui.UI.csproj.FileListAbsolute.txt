@@ -154,7 +154,6 @@ C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\ru\
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -164,3 +163,4 @@ C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Mic
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\ReserveAqui.Application.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\ReserveAqui.Application.pdb
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

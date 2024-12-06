@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using ReserveAqui.Infra.Identity.User;
 using Microsoft.AspNetCore.WebUtilities;
 using System.Text;
+using ReserveAqui.Core.Interfaces.Repositories.MateriaRepository;
+using ReserveAqui.Core.Interfaces.Repositories.InstituicaoRepository;
 
 namespace ReserveAqui.Application.UseCases.Professores.Criar;
 
@@ -15,26 +17,47 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
 {
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IProfessorRepository _professorRepository;
+    private readonly IMateriaRepository _materiaRepository;
+    private readonly IInstituicaoRepository _instituicaoRepository;
     private readonly IUnitOfWork _uof;
     private readonly IMapper _mapper;
     private readonly IEmailSender _sender;
     public CriarProfessorHandler(UserManager<ApplicationUser> userManager,
-        IProfessorRepository professorRepository, 
-        IUnitOfWork uof, 
+        IProfessorRepository professorRepository,
+        IUnitOfWork uof,
         IMapper mapper,
-        IEmailSender sender)
+        IEmailSender sender,
+        IMateriaRepository materiaRepository,
+        IInstituicaoRepository instituicaoRepository)
     {
         _userManager = userManager;
         _professorRepository = professorRepository;
         _uof = uof;
         _mapper = mapper;
         _sender = sender;
+        _materiaRepository = materiaRepository;
+        _instituicaoRepository = instituicaoRepository;
     }
 
     public async Task<CriarProfessorResponse> Handle(CriarProfessorRequest request,
         CancellationToken cancellationToken)
     {
         var professor = _mapper.Map<Professor>(request);
+
+        var materia = await _materiaRepository.ObterPorNome(request.Materia);
+        if(materia == null)
+        {
+            return new CriarProfessorResponse { Mensagem = "Matéria não encontrada. " };
+        }
+
+        var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
+        if(instituicao == null)
+        {
+            return new CriarProfessorResponse { Mensagem = "Instituição não encontrada." };
+        }
+
+        professor.Materia = materia;
+        professor.Instituicao = instituicao;
 
         _professorRepository.Criar(professor);
 
@@ -63,7 +86,7 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
 
         await SendConfirmationEmail(user, "https://localhost:7078");
 
-        return new CriarProfessorResponse { Mensagem = "User created sucessfully" };
+        return new CriarProfessorResponse { Mensagem = "Usuário criado com sucesso" };
     }
 
     private async Task SendConfirmationEmail(ApplicationUser user, string baseUrl)

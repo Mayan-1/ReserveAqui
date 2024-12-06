@@ -24,6 +24,11 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<Professor>()
+            .HasOne(m => m.Materia)
+            .WithMany(p => p.Professores)
+            .HasForeignKey(m => m.MateriaId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 
 }

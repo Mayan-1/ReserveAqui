@@ -4,6 +4,6 @@ namespace ReserveAqui.Core.Interfaces.Repositories.ReservaMaterialRepository;
 
 public interface IReservaMaterialRepository : IBaseRepository<ReservaMaterial>
 {
-    Task<ReservaMaterial> ObterReservaPorData(DateOnly data, CancellationToken cancellationToken);
+    Task<bool> ObterReservaPorData(DateOnly data, Turno turno, Material material, CancellationToken cancellationToken);
 
 }

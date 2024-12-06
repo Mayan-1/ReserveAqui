@@ -41,6 +41,7 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
         return await Context.Set<TEntity>().ToListAsync(cancellationToken);
     }
 
+    
     public void Atualizar(TEntity entity)
     {
         entity.DataModificacao = DateTimeOffset.UtcNow;
