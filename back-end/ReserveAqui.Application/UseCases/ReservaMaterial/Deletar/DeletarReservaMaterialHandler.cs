@@ -22,6 +22,6 @@ public class DeletarReservaMaterialHandler : IRequestHandler<DeletarReservaMater
 
         _reservaMaterialRepository.Deletar(reserva);
         await _uof.Commit(cancellationToken);
-        return new DeletarReservaMaterialResponse { Mensagem = "Reserva deletad com sucesso" };
+        return new DeletarReservaMaterialResponse { Mensagem = "Reserva deletada com sucesso" };
     }
 }

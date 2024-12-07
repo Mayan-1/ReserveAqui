@@ -1,5 +1,4 @@
 ﻿using ReserveAqui.Core.Common;
-using ReserveAqui.Core.Models;
 
 namespace ReserveAqui.Core.Models;
 

@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\interfaces\\repositories\\reservamaterialrepository\\ireservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\interfaces\\repositories\\reservamaterialrepository\\ireservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\config\\repositories\\reservamaterialrepository\\reservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\config\\repositories\\reservamaterialrepository\\reservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,97 +40,63 @@
               "RelativeDocumentMoniker": "ReserveAqui.Core\\Models\\ReservaMaterial.cs",
               "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\ReservaMaterial.cs",
               "RelativeToolTip": "ReserveAqui.Core\\Models\\ReservaMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T19:14:41.586Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IReservaMaterialRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
-              "RelativeToolTip": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T03:21:21.071Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReservaMaterialRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
-              "RelativeToolTip": "ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAFAAAAAAAAAA==",
+              "Title": "AtualizarReservaMaterialRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T03:19:52.06Z",
+              "WhenOpened": "2024-12-06T19:48:46.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CriarReservaMaterialHandler.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
               "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
               "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAIA6wDIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:38:32.093Z",
+              "WhenOpened": "2024-12-06T19:45:45.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "AtualizarReservaMaterialHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCMAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T19:45:12.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CriarReservaMaterialValidator.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
               "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
               "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:34:56.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CriarReservaMaterialMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialMapper.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialMapper.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialMapper.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialMapper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:24:50.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CriarReservaMaterialResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialResponse.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialResponse.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialResponse.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:23:02.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CriarReservaMaterialRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialRequest.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialRequest.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialRequest.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:19:58.58Z"
+              "WhenOpened": "2024-12-06T19:44:32.453Z",
+              "EditorCaption": ""
             }
           ]
         }

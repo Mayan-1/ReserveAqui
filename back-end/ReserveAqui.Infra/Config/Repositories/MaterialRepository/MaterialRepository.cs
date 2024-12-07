@@ -14,7 +14,7 @@ public class MaterialRepository : BaseRepository<Material>, IMaterialRepository
 
     public async Task<Material> ObterMaterialPorNome(string nome)
     {
-        var material = await Context.Material.FirstOrDefaultAsync(x = x => x.Nome == nome);
+        var material = await Context.Material.FirstOrDefaultAsync(x => x.Nome == nome);
         return material;    
     }
 }
