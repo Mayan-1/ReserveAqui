@@ -42,8 +42,7 @@
               "RelativeToolTip": "ReserveAqui.UI\\Program.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:34:38.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:34:38.943Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:30:26.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:30:26.153Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:21:35.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:21:35.674Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAcwAoAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:19:33.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:19:33.525Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
               "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
               "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T16:19:21.043Z",
               "EditorCaption": ""

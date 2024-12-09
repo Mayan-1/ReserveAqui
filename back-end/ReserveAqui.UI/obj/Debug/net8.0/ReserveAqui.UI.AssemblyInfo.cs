@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReserveAqui.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5844dceff9c1dc3313b8c1e01e06e9d978df30c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+496e839300d9428b4775852f2749700a32a91a73")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReserveAqui.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReserveAqui.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
