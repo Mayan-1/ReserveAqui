@@ -32,8 +32,8 @@ namespace ReserveAqui.Infra
         public static void ConfigurePersistenceApp(this IServiceCollection services,
        IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
+           // var connectionString = configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("reserve-aqui"));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IProfessorRepository, ProfessorRepository>();
             services.AddScoped<IAdministradorRepository, AdministradorRepository>();

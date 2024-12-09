@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kCSTsL0xFLk=",
+  "dgSpecHash": "TZR0M3rZks8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\ReserveAqui.Application.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.11\\microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.11\\microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",
+    "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.11\\microsoft.entityframeworkcore.inmemory.8.0.11.nupkg.sha512",
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.11\\microsoft.entityframeworkcore.relational.8.0.11.nupkg.sha512",
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.11\\microsoft.entityframeworkcore.sqlserver.8.0.11.nupkg.sha512",
     "C:\\Users\\Mayam\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
