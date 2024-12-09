@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "ReserveAqui.Infra\\ServiceExtensions.cs",
@@ -55,13 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\appsettings.json",
               "RelativeDocumentMoniker": "ReserveAqui.UI\\appsettings.json",
               "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\appsettings.json",
               "RelativeToolTip": "ReserveAqui.UI\\appsettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-09T20:02:41.864Z",
               "EditorCaption": ""
@@ -76,8 +76,7 @@
               "RelativeToolTip": "ReserveAqui.UI\\Program.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAswG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:34:38.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:34:38.943Z"
             },
             {
               "$type": "Document",
@@ -89,8 +88,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:30:26.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:30:26.153Z"
             },
             {
               "$type": "Document",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:21:35.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:21:35.674Z"
             },
             {
               "$type": "Document",
@@ -115,8 +112,7 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAcwAoAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:19:33.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:19:33.525Z"
             },
             {
               "$type": "Document",
@@ -128,8 +124,7 @@
               "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T16:19:21.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T16:19:21.043Z"
             }
           ]
         }
