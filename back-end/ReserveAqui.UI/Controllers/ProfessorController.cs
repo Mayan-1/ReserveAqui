@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ReserveAqui.Application.UseCases;
@@ -34,6 +35,7 @@ namespace ReserveAqui.UI.Controllers
         }
 
         [HttpGet]
+        [Authorize (Roles = "admin")]
         public async Task<ActionResult<ICollection<ObterTodosProfessoresResponse>>> ObterTodos(CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(new ObterTodosProfessoresRequest(), cancellationToken);

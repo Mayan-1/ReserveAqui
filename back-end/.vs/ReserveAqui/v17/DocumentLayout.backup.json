@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessormapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\atualizar\\atualizarreservamaterialrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\administrador\\criar\\criaradministradorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\administrador\\criar\\criaradministradorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservamaterial\\criar\\criarreservamaterialvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\obtertodos\\obtertodosprofessoreshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\obtertodos\\obtertodosprofessoreshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\reservamaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ReservaMaterial.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\ReservaMaterial.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Core\\Models\\ReservaMaterial.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\ReservaMaterial.cs",
-              "RelativeToolTip": "ReserveAqui.Core\\Models\\ReservaMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
+              "RelativeToolTip": "ReserveAqui.UI\\Program.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:14:41.586Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AtualizarReservaMaterialRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:48:46.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CriarReservaMaterialHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialHandler.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowCcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:45:45.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AtualizarReservaMaterialHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Atualizar\\AtualizarReservaMaterialHandler.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCMAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:45:12.548Z",
+              "WhenOpened": "2024-12-09T16:34:38.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CriarReservaMaterialValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaMaterial\\Criar\\CriarReservaMaterialValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Title": "ObterTodosProfessoresHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:44:32.453Z",
+              "WhenOpened": "2024-12-09T16:30:26.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CriarAdministradorHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Administrador\\Criar\\CriarAdministradorHandler.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T16:21:35.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CriarProfessorMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorMapper.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwAoAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T16:19:33.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProfessorController.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T16:19:21.043Z",
               "EditorCaption": ""
             }
           ]

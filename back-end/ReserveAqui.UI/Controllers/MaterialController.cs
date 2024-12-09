@@ -6,11 +6,6 @@ using ReserveAqui.Application.UseCases.Material.Criar;
 using ReserveAqui.Application.UseCases.Material.Deletar;
 using ReserveAqui.Application.UseCases.Material.Obter;
 using ReserveAqui.Application.UseCases.Material.ObterTodos;
-using ReserveAqui.Application.UseCases.Sala.Atualizar;
-using ReserveAqui.Application.UseCases.Sala.Criar;
-using ReserveAqui.Application.UseCases.Sala.Deletar;
-using ReserveAqui.Application.UseCases.Sala.Obter;
-using ReserveAqui.Application.UseCases.Sala.ObterTodos;
 
 namespace ReserveAqui.UI.Controllers
 {

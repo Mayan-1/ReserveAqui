@@ -33,6 +33,7 @@ public class CriarAdministradorHandler : IRequestHandler<CriarAdministradorReque
 
     public async Task<CriarAdministradorResponse> Handle(CriarAdministradorRequest request, CancellationToken cancellationToken)
     {
+        string role = "admin";
         var administrador = _mapper.Map<Core.Models.Administrador>(request);
 
         var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
@@ -63,6 +64,8 @@ public class CriarAdministradorHandler : IRequestHandler<CriarAdministradorReque
             var errors = string.Join(", ", result.Errors.Select(e => $"{e.Code}: {e.Description}"));
             throw new InvalidOperationException($"Criação de usuario falhou. Erros {errors}");
         }
+
+        await _userManager.AddToRoleAsync(user, role);
 
         await SendConfirmationEmail(user, "https://localhost:7078");
 

@@ -42,6 +42,8 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
     public async Task<CriarProfessorResponse> Handle(CriarProfessorRequest request,
         CancellationToken cancellationToken)
     {
+        string role = "professor";
+
         var professor = _mapper.Map<Professor>(request);
 
         var materia = await _materiaRepository.ObterPorNome(request.Materia);
@@ -84,7 +86,10 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
             throw new InvalidOperationException($"Criação de usuario falhou. Erros {errors}");
         }
 
+        await _userManager.AddToRoleAsync(user, role);
+
         await SendConfirmationEmail(user, "https://localhost:7078");
+
 
         return new CriarProfessorResponse { Mensagem = "Usuário criado com sucesso" };
     }

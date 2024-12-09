@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ReserveAqui.Application.Services.Token
 {
-    internal interface ITokenService
+    public interface ITokenService
     {
         JwtSecurityToken GenerateAcessToken(IEnumerable<Claim> claims,
         IConfiguration _config);
