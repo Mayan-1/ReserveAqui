@@ -1,0 +1,26 @@
+.borda-red {
+  border: 1px solid red;
+}
+
+.bg-left-login {
+  background: #1248b2;
+}
+
+@media screen and (max-width: 960px) {
+  .bg-left-login {
+    display: none;
+  }
+}
+
+.objeto2 {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.objeto3 {
+  z-index: -1;
+  position: absolute;
+  right: 25%;
+  bottom: 0%;
+}

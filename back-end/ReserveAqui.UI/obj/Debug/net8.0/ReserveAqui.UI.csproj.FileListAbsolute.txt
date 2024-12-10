@@ -163,5 +163,5 @@ C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Mic
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\ReserveAqui.Application.dll
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\ReserveAqui.Application.pdb
-C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
