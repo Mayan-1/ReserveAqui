@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +22,10 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build ./back-end/ReserveAqui.sln --configuration Release
+        run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish ./back-end/ReserveAqui.sln -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -34,7 +34,7 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1F610CA88C764ED9AB71567D6B28F25A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_07AF1983914D43A681634936451F9692 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5D1F85EFD7AA45698E7245CD0D50D02E }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_28FA6D9C5E094E9392CBAE2041E5B3E2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2BD1377E7AB148A491C02E526632F2F6 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_45C45610E56243C1BD3BC2F185C4226A }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
