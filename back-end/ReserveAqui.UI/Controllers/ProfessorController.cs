@@ -35,7 +35,7 @@ namespace ReserveAqui.UI.Controllers
         }
 
         [HttpGet]
-        [Authorize (Roles = "admin")]
+        //[Authorize (Roles = "admin")]
         public async Task<ActionResult<ICollection<ObterTodosProfessoresResponse>>> ObterTodos(CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(new ObterTodosProfessoresRequest(), cancellationToken);

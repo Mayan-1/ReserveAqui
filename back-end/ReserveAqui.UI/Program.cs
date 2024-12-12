@@ -21,6 +21,17 @@ builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 builder.Services.ConfigureApplicationApp();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200") 
+               .AllowAnyHeader()                     
+               .AllowAnyMethod();                   
+    });
+});
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -90,7 +101,11 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("ExclusivePolice", policy => policy.RequireRole("Exclusive"));
 });
 
+
+
 var app = builder.Build();
+
+app.UseCors("AllowFrontend");
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();

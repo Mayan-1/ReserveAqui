@@ -26,8 +26,9 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
         var user = await _userManager.FindByEmailAsync(request.Email!);
 
         if (user is null || !await _userManager.CheckPasswordAsync(user, request.Password!))
+        {
             throw new InvalidOperationException("Email ou senha inválidos.");
-
+        }
         var userRoles = await _userManager.GetRolesAsync(user);
 
         var authClaims = new List<Claim>
