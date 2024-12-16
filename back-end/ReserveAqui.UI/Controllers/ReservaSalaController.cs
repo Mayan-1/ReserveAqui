@@ -5,6 +5,7 @@ using ReserveAqui.Application.UseCases.ReservaSala.Atualizar;
 using ReserveAqui.Application.UseCases.ReservaSala.Criar;
 using ReserveAqui.Application.UseCases.ReservaSala.Deletar;
 using ReserveAqui.Application.UseCases.ReservaSala.Obter;
+using ReserveAqui.Application.UseCases.ReservaSala.ObterComFiltro;
 using ReserveAqui.Application.UseCases.ReservaSala.ObterTodas;
 
 namespace ReserveAqui.UI.Controllers
@@ -20,10 +21,10 @@ namespace ReserveAqui.UI.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<ICollection<ObterTodasReservasSalasResponse>>> ObterTodas(CancellationToken cancellationToken)
+        [HttpGet("professor/{id}")]
+        public async Task<ActionResult<ICollection<ObterTodasReservasSalasResponse>>> ObterTodas(int id, CancellationToken cancellationToken)
         {
-            var response = await _mediator.Send(new ObterTodasReservasSalasRequest(), cancellationToken);
+            var response = await _mediator.Send(new ObterTodasReservasSalasRequest(id), cancellationToken);
             return Ok(response);
         }
 
@@ -34,17 +35,35 @@ namespace ReserveAqui.UI.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
-        public async Task<ActionResult> Criar(CriarReservaSalaRequest request, CancellationToken cancellationToken)
+        [HttpGet("filtro")]
+        public async Task<ActionResult<ICollection<ObterComFiltroResponse>>> ObterComFiltro(
+            [FromHeader (Name = "Sala")] string sala, 
+            [FromHeader (Name = "Turno")] string turno, 
+            CancellationToken cancellationToken)
         {
+            var request = new ObterComFiltroRequest();
+            request.Sala = sala;
+            request.Turno = turno;
+            var response = await _mediator.Send(request, cancellationToken);
+
+            var datasReservadas = response.Select(r => r.Data.ToString("yyyy-MM-dd")).ToList();
+            return Ok(datasReservadas);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Criar([FromHeader(Name = "idProfessor")] int idProfessor, [FromBody] CriarReservaSalaRequest request, CancellationToken cancellationToken)
+        {
+            request.IdProfessor = idProfessor;
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Atualizar(int id, AtualizarReservaSalaRequest request, CancellationToken cancellationToken)
+        public async Task<ActionResult> Atualizar([FromHeader(Name = "idProfessor")] int idProfessor, int id, [FromBody] AtualizarReservaSalaRequest request, CancellationToken cancellationToken)
         {
-            if (id != request.Id) return BadRequest();
+
+            request.IdProfessor = idProfessor;
+            request.Id = id;
 
             var response = await _mediator.Send(request);
             return Ok(response);

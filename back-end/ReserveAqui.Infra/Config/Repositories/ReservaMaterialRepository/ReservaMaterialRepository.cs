@@ -17,4 +17,14 @@ public class ReservaMaterialRepository : BaseRepository<ReservaMaterial>, IReser
         return reservaExiste;
         
     }
+
+    public async Task<ICollection<ReservaMaterial>> ObterReservasPorProfessor(int id, CancellationToken cancellationToken)
+    {
+        var reservas = await Context.ReservaMaterial
+            .Include(s => s.Material)
+            .Include(t => t.Turno)
+            .Include(p => p.Professor)
+            .Where(x => x.Professor.Id == id).ToListAsync();
+        return reservas;
+    }
 }

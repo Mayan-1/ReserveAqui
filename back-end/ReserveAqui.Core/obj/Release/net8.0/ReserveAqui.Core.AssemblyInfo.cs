@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReserveAqui.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+238b12cd3254b533d86610649e241512bcd73bcb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18d3afc7f01ecb6b1a71cc123e9ea8959c617d2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReserveAqui.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReserveAqui.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

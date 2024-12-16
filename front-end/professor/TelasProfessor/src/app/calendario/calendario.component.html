@@ -2,7 +2,12 @@
   <div class="flex flex-wrap justify-center max-w-7xl w-full gap-8">
     <!-- Calendário -->
     <mat-card class="demo-inline-calendar-card">
-      <mat-calendar [(selected)]="selected"></mat-calendar>
+      <mat-calendar
+        *ngIf="diasReservados.length > 0"
+        [dateClass]="getDateClass"
+        [(selected)]="selected"
+        [dateFilter]="dateFilter"
+      ></mat-calendar>
       <div
         class="bg-blue-600 text-white p-4 mt-4 rounded-lg shadow-lg max-w-lg"
       >
@@ -26,12 +31,11 @@
         <!-- Botão -->
         <button
           class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700"
+          (click)="criarReserva()"
         >
           Efetuar nova reserva
         </button>
       </div>
-
-      <!-- Texto informativo -->
     </div>
   </div>
 </div>

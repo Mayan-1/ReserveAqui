@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using ReserveAqui.Application.Services.Token;
+using ReserveAqui.Core.Interfaces.Repositories.ProfessorRepository;
+using ReserveAqui.Core.Models;
 using ReserveAqui.Infra.Identity.User;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -13,12 +15,14 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
     private readonly ITokenService _tokenService;
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IConfiguration _configuration;
+    private readonly IProfessorRepository _professorRepository;
 
-    public LoginHandler(ITokenService tokenService, UserManager<ApplicationUser> userManager, IConfiguration configuration)
+    public LoginHandler(ITokenService tokenService, UserManager<ApplicationUser> userManager, IConfiguration configuration, IProfessorRepository professorRepository)
     {
         _tokenService = tokenService;
         _userManager = userManager;
         _configuration = configuration;
+        _professorRepository = professorRepository;
     }
 
     public async Task<LoginResponse> Handle(LoginRequest request, CancellationToken cancellationToken)
@@ -31,8 +35,11 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
         }
         var userRoles = await _userManager.GetRolesAsync(user);
 
+
         var authClaims = new List<Claim>
             {
+
+            
                 new Claim(ClaimTypes.Name, user.UserName!),
                 new Claim(ClaimTypes.Email, user.Email!),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
@@ -41,6 +48,14 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
         foreach (var userRole in userRoles)
         {
             authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+            if(userRole.Equals("professor", StringComparison.OrdinalIgnoreCase))
+            {
+                var professor = await _professorRepository.ObterProfessorPorNome(user.UserName);
+                if (professor != null)
+                {
+                    authClaims.Add(new Claim("ProfessorId", professor.Id.ToString())); 
+                }
+            }
         }
 
         var token = _tokenService.GenerateAcessToken(authClaims,

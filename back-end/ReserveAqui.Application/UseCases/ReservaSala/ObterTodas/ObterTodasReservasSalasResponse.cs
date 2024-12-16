@@ -4,6 +4,7 @@ namespace ReserveAqui.Application.UseCases.ReservaSala.ObterTodas;
 
 public sealed record ObterTodasReservasSalasResponse
 {
+    public int Id { get; set; }
     public DateOnly Data { get; set; }
     public Core.Models.Turno? Turno { get; set; }
     public string Descricao { get; set; } = string.Empty;

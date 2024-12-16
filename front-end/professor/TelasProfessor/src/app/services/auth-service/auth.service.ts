@@ -96,4 +96,13 @@ export class AuthService {
     const token = this.getToken();
     return token !== null && !this.isTokenExpired();
   }
+
+  getIdProfessor(): number | null {
+    const token = localStorage.getItem('jwtToken'); // Ou sessionStorage, conforme sua implementação
+    if (token) {
+      const decodedToken = JSON.parse(atob(token.split('.')[1])); // Decodifica o token
+      return decodedToken.ProfessorId; // Supondo que o idProfessor esteja no token
+    }
+    return null;
+  }
 }

@@ -9,7 +9,7 @@ public class AtualizarReservaSalaValidator : AbstractValidator<AtualizarReservaS
         RuleFor(x => x.Id).NotEmpty();
         RuleFor(x => x.Data).NotEmpty();
         RuleFor(x => x.Sala).NotEmpty();
-        RuleFor(x => x.Professor).NotEmpty();
+        RuleFor(x => x.IdProfessor).NotEmpty();
         RuleFor(x => x.Descricao).NotEmpty();
         RuleFor(x => x.Turno).NotEmpty();
     }

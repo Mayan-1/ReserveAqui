@@ -18,11 +18,13 @@
           <select
             id="sala"
             name="sala"
+            [(ngModel)]="sala"
             class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           >
-            <option value="">Selecione a sala</option>
-            <option value="sala1">Sala 1</option>
-            <option value="sala2">Sala 2</option>
+            <option value="" disabled></option>
+            <option *ngFor="let sala of salas" [ngValue]="sala">
+              {{ sala.nome }}
+            </option>
           </select>
         </div>
 
@@ -36,12 +38,13 @@
           <select
             id="turno"
             name="turno"
+            [(ngModel)]="turno"
             class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
           >
-            <option value="">Turno da aula</option>
-            <option value="manha">Manhã</option>
-            <option value="tarde">Tarde</option>
-            <option value="noite">Noite</option>
+            <option value="" disabled></option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
           </select>
         </div>
 
@@ -58,13 +61,15 @@
             rows="4"
             class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
             placeholder="Descrição da aula"
+            [(ngModel)]="descricao"
           ></textarea>
         </div>
 
         <!-- Botão -->
         <div class="flex justify-end">
           <button
-            type="submit"
+            type="button"
+            (click)="onSubmit()"
             class="bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Próximo

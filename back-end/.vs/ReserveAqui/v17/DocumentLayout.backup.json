@@ -3,12 +3,140 @@
   "WorkspaceRootPath": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\auth\\login\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\auth\\login\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\deletar\\deletarprofessorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\deletar\\deletarprofessorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\config\\repositories\\reservamaterialrepository\\reservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\config\\repositories\\reservamaterialrepository\\reservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\config\\repositories\\reservasalarepository\\reservasalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|solutionrelative:reserveaqui.infra\\config\\repositories\\reservasalarepository\\reservasalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\interfaces\\repositories\\reservamaterialrepository\\ireservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\interfaces\\repositories\\reservamaterialrepository\\ireservamaterialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\interfaces\\repositories\\reservasalarepository\\ireservasalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\interfaces\\repositories\\reservasalarepository\\ireservasalarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\obtertodos\\obtertodosprofessoresresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\obtertodos\\obtertodosprofessoresresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\professores\\criar\\criarprofessorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\professores\\criar\\criarprofessorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\atualizar\\atualizarreservasalavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\atualizar\\atualizarreservasalavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\atualizar\\atualizarreservasalahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\atualizar\\atualizarreservasalahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\controllers\\reservasalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\controllers\\reservasalacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obter\\obterreservasalarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obter\\obterreservasalarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\turma\\obtertodos\\obtertodasturmasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\turma\\obtertodos\\obtertodasturmasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltroresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltroresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltromapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltromapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtercomfiltro\\obtercomfiltrovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.core\\models\\reservasala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{592400B1-BD7D-4A4C-AB37-60F19A1E0B86}|ReserveAqui.Core\\ReserveAqui.Core.csproj|solutionrelative:reserveaqui.core\\models\\reservasala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\criar\\criarreservasalavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalasrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\sala\\obtertodos\\obtertodassalasrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalasrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalasrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\reservasala\\obtertodas\\obtertodasreservassalasresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\auth\\login\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\auth\\login\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\services\\token\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\services\\token\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.application\\usecases\\auth\\login\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6F17A3-5335-4F86-9C35-4F1E186B30D8}|ReserveAqui.Application\\ReserveAqui.Application.csproj|solutionrelative:reserveaqui.application\\usecases\\auth\\login\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B7AD78A-6B79-456F-8CD7-0FCBEDD8CCE8}|ReserveAqui.UI\\ReserveAqui.UI.csproj|solutionrelative:reserveaqui.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF197111-E06B-493B-8645-C47C03896428}|ReserveAqui.Infra\\ReserveAqui.Infra.csproj|c:\\users\\mayam\\desktop\\reserve-aqui\\back-end\\reserveaqui.infra\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +158,416 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IReservaMaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
+              "RelativeToolTip": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaMaterialRepository\\IReservaMaterialRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:15:26.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservaMaterialRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
+              "RelativeToolTip": "ReserveAqui.Infra\\Config\\Repositories\\ReservaMaterialRepository\\ReservaMaterialRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:15:23.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DeletarProfessorHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Deletar\\DeletarProfessorHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Deletar\\DeletarProfessorHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Deletar\\DeletarProfessorHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Deletar\\DeletarProfessorHandler.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:11:41.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ObterTodosProfessoresResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\ObterTodos\\ObterTodosProfessoresResponse.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:05:44.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CriarProfessorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Professores\\Criar\\CriarProfessorRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:35:28.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReservaSalaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaSalaRepository\\ReservaSalaRepository.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Infra\\Config\\Repositories\\ReservaSalaRepository\\ReservaSalaRepository.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\Config\\Repositories\\ReservaSalaRepository\\ReservaSalaRepository.cs",
+              "RelativeToolTip": "ReserveAqui.Infra\\Config\\Repositories\\ReservaSalaRepository\\ReservaSalaRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:04:17.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AtualizarReservaSalaValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaValidator.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaValidator.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaValidator.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:44:57.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ObterReservaSalaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Obter\\ObterReservaSalaRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Obter\\ObterReservaSalaRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Obter\\ObterReservaSalaRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Obter\\ObterReservaSalaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:18:59.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IReservaSalaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaSalaRepository\\IReservaSalaRepository.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaSalaRepository\\IReservaSalaRepository.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Interfaces\\Repositories\\ReservaSalaRepository\\IReservaSalaRepository.cs",
+              "RelativeToolTip": "ReserveAqui.Core\\Interfaces\\Repositories\\ReservaSalaRepository\\IReservaSalaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:03:52.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CriarReservaSalaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwB8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T14:00:58.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
+              "RelativeToolTip": "ReserveAqui.UI\\Program.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAswHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:44:04.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AtualizarReservaSalaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Atualizar\\AtualizarReservaSalaHandler.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T20:33:06.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservaSalaController.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ReservaSalaController.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\ReservaSalaController.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ReservaSalaController.cs",
+              "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ReservaSalaController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwEEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:24:38.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CriarReservaSalaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaRequest.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:23:23.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ObterTodasTurmasResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Turma\\ObterTodos\\ObterTodasTurmasResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Turma\\ObterTodos\\ObterTodasTurmasResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Turma\\ObterTodos\\ObterTodasTurmasResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Turma\\ObterTodos\\ObterTodasTurmasResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T02:07:46.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ObterTodasSalasResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:55:13.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CriarReservaSalaMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaMapper.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaMapper.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaMapper.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T02:20:17.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ObterComFiltroHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:20:48.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ObterComFiltroRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:17:26.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CriarReservaSalaResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:23:11.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ObterComFiltroMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroMapper.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroMapper.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroMapper.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:28:54.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ObterComFiltroValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroValidator.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroValidator.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroValidator.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:24:53.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ObterComFiltroResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterComFiltro\\ObterComFiltroResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:18:03.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Sala.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\Sala.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Core\\Models\\Sala.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\Sala.cs",
+              "RelativeToolTip": "ReserveAqui.Core\\Models\\Sala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:18:19.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReservaSala.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\ReservaSala.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Core\\Models\\ReservaSala.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Core\\Models\\ReservaSala.cs",
+              "RelativeToolTip": "ReserveAqui.Core\\Models\\ReservaSala.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T19:18:47.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ObterTodasSalasHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:54:43.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ObterTodasSalasRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Sala\\ObterTodos\\ObterTodasSalasRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:54:33.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CriarReservaSalaValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaValidator.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaValidator.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaValidator.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\Criar\\CriarReservaSalaValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T18:26:01.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ObterTodasReservasSalasRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasRequest.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasRequest.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasRequest.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:24:08.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ObterTodasReservasSalasResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasResponse.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasResponse.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasResponse.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T00:45:39.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ObterTodasReservasSalasHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\ReservaSala\\ObterTodas\\ObterTodasReservasSalasHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:03:42.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\Services\\Token\\TokenService.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\Services\\Token\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\Services\\Token\\TokenService.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\Services\\Token\\TokenService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAD4vzEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:20:01.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LoginHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
+              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
+              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
+              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA4wFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:45:59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginResponse.cs",
               "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginResponse.cs",
@@ -46,12 +575,11 @@
               "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:18:15.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T17:18:15.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 34,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\AuthController.cs",
@@ -59,12 +587,11 @@
               "RelativeToolTip": "ReserveAqui.UI\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:17:26.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T17:17:26.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 35,
               "Title": "ProfessorController.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Controllers\\ProfessorController.cs",
               "RelativeDocumentMoniker": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
@@ -72,12 +599,11 @@
               "RelativeToolTip": "ReserveAqui.UI\\Controllers\\ProfessorController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwCUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:00:11.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T17:00:11.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 36,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Infra\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "ReserveAqui.Infra\\ServiceExtensions.cs",
@@ -85,34 +611,7 @@
               "RelativeToolTip": "ReserveAqui.Infra\\ServiceExtensions.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:59:05.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
-              "RelativeToolTip": "ReserveAqui.Application\\UseCases\\Auth\\Login\\LoginHandler.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwB0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T16:45:59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
-              "RelativeDocumentMoniker": "ReserveAqui.UI\\Program.cs",
-              "ToolTip": "C:\\Users\\Mayam\\Desktop\\reserve-aqui\\back-end\\ReserveAqui.UI\\Program.cs",
-              "RelativeToolTip": "ReserveAqui.UI\\Program.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAswGsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T15:44:04.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T16:59:05.258Z"
             }
           ]
         }

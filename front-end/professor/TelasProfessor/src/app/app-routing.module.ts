@@ -7,36 +7,21 @@ import { TipoReservaComponent } from './tipo-reserva/tipo-reserva.component';
 import { CamposReservaSalaComponent } from './campos-reserva-sala/campos-reserva-sala.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
+import { EditarSalaComponent } from './editar-sala/editar-sala.component';
+import { CalendarioEditarReservaSalaComponent } from './calendario-editar-reserva-sala/calendario-editar-reserva-sala.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: TelaLoginComponent },
+  { path: 'sala', component: ListaReservasComponent },
+  { path: 'materiais', component: ListaReservaMaterialComponent },
+  { path: 'tipos', component: TipoReservaComponent },
+  { path: 'campos-sala', component: CamposReservaSalaComponent },
+  { path: 'calendario', component: CalendarioComponent },
+  { path: 'editar-reserva-sala/:id', component: EditarSalaComponent },
   {
-    path: '',
-    component: TelaLoginComponent,
-  },
-  {
-    path: 'home',
-    component: NavbarComponent,
-    children: [{ path: '', component: ListaReservasComponent }],
-  },
-  {
-    path: 'materiais',
-    component: NavbarComponent,
-    children: [{ path: '', component: ListaReservaMaterialComponent }],
-  },
-  {
-    path: 'tipos',
-    component: NavbarComponent,
-    children: [{ path: '', component: TipoReservaComponent }],
-  },
-  {
-    path: 'campos-sala',
-    component: NavbarComponent,
-    children: [{ path: '', component: CamposReservaSalaComponent }],
-  },
-  {
-    path: 'calendario',
-    component: NavbarComponent,
-    children: [{ path: '', component: CalendarioComponent }],
+    path: 'calendario-editar-reserva-sala/:id',
+    component: CalendarioEditarReservaSalaComponent,
   },
 ];
 

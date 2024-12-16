@@ -1,0 +1,41 @@
+<div class="flex flex-col items-center min-h-screen p-8">
+  <div class="flex flex-wrap justify-center max-w-7xl w-full gap-8">
+    <!-- Calendário -->
+    <mat-card class="demo-inline-calendar-card">
+      <mat-calendar
+        *ngIf="diasReservados.length > 0"
+        [dateClass]="getDateClass"
+        [(selected)]="selected"
+        [dateFilter]="dateFilter"
+      ></mat-calendar>
+      <div
+        class="bg-blue-600 text-white p-4 mt-4 rounded-lg shadow-lg max-w-lg"
+      >
+        <p>
+          Acima, temos o calendário mostrando em vermelho os dias que não se
+          pode mais efetuar reserva. As datas em preto ainda são possíveis
+          realizar uma reserva.
+        </p>
+      </div>
+    </mat-card>
+
+    <!-- Imagem e botão -->
+    <div class="flex flex-col items-center">
+      <!-- Imagem -->
+      <div class="relative overflow-hidden rounded-lg shadow-lg">
+        <img
+          src="assets/image-sala.png"
+          alt="Sala de aula"
+          class="w-96 h-fit object-cover"
+        />
+        <!-- Botão -->
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700"
+          (click)="atualizarReserva()"
+        >
+          Atualizar Reserva
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

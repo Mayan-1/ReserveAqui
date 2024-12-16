@@ -166,3 +166,4 @@ C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Release\net8.0\r
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Release\net8.0\ReserveAqui.UI.pdb
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Release\net8.0\ReserveAqui.UI.genruntimeconfig.cache
 C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\obj\Release\net8.0\ref\ReserveAqui.UI.dll
+C:\Users\Mayam\Desktop\reserve-aqui\back-end\ReserveAqui.UI\bin\Release\net8.0\Newtonsoft.Json.dll
