@@ -17,7 +17,7 @@ public sealed class ObterTodasTurmasHandler : IRequestHandler<ObterTodasTurmasRe
 
     public async Task<ICollection<ObterTodasTurmasResponse>> Handle(ObterTodasTurmasRequest request, CancellationToken cancellationToken)
     {
-        var turmas = await _turmaRepository.ObterTodos(cancellationToken);
+        var turmas = await _turmaRepository.ObterTodasTurmas();
         if (turmas == null) return null;
 
         return _mapper.Map<ICollection<ObterTodasTurmasResponse>>(turmas);

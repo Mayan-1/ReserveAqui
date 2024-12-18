@@ -1,0 +1,133 @@
+<div class="row-auto overflow-x-auto relative">
+  <img src="assets/objeto2.svg" class="objeto2" />
+  <img src="assets/objeto3.svg" class="objeto3" />
+
+  <div class="grid-6">
+    <div
+      class="bg-left-login w-3/4 rounded-r-lg h-screen flex justify-center items-center"
+    >
+      <img src="assets/img-tela-login.png" class="ml-96" />
+    </div>
+  </div>
+  <div class="grid-6">
+    <div class="shadow-2xl w-2/3 rounded-md mt-28 mx-12">
+      <div class="flex justify-center items-center">
+        <img src="assets/logo.png" class="" />
+      </div>
+      <form
+        [formGroup]="cadastroAdmForm"
+        (ngSubmit)="onSubmit()"
+        class="max-w-2xl mx-auto bg-white shadow-xl rounded-lg p-3"
+      >
+        <div class="relative z-0 w-full mb-5 group">
+          <label class="block mb-1 text-sm text-slate-600">
+            <div class="flex">
+              Nome
+              <div class="text-red-500">*</div>
+            </div></label
+          >
+          <input
+            formControlName="nome"
+            class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+            placeholder="Nome..."
+          />
+        </div>
+
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                Email
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="email"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="Email..."
+            />
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                Confirma Email
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="confirmaEmail"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="Confirmar email..."
+            />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                CPF
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="cpf"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="CPF..."
+            />
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                Telefone
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="telefone"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="Telefone..."
+            />
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                Senha
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="senha"
+              type="password"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="Senha..."
+            />
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <label class="block mb-1 text-sm text-slate-600">
+              <div class="flex">
+                Confirma Senha
+                <div class="text-red-500">*</div>
+              </div></label
+            >
+            <input
+              formControlName="confirmaSenha"
+              type="password"
+              class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+              placeholder="Confirma senha..."
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
+        >
+          Cadastrar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

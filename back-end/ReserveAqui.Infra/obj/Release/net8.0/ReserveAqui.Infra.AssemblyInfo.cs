@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReserveAqui.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18d3afc7f01ecb6b1a71cc123e9ea8959c617d2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+130a6cf8e64d1cc75d9c412cb333836726e41394")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReserveAqui.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReserveAqui.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

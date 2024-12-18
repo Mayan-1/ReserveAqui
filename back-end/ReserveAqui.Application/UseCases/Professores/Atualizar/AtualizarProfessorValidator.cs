@@ -16,6 +16,5 @@ public class AtualizarProfessorValidator : AbstractValidator<AtualizarProfessorR
         RuleFor(x => x.Telefone).NotEmpty().WithMessage("O telefone não pode ser vazio.");
         RuleFor(x => x.Cpf).NotEmpty().WithMessage("O cpf não pode ser vazio");
         RuleFor(x => x.Materia).NotEmpty().WithMessage("A matéria não pode ser vazia");
-        RuleFor(x => x.Instituicao).NotEmpty().WithMessage("A instituição não pode ser vazia");
     }
 }

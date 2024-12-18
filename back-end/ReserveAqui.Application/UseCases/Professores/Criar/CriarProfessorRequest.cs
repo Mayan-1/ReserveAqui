@@ -1,10 +1,18 @@
 ﻿using MediatR;
-using ReserveAqui.Core.Models;
+using System.Text.Json.Serialization;
 
-namespace ReserveAqui.Application.UseCases.Professores.Criar
+namespace ReserveAqui.Application.UseCases.Professores.Criar;
+
+public sealed record CriarProfessorRequest :  IRequest<CriarProfessorResponse>
 {
-    public sealed record CriarProfessorRequest(string Nome, string Cpf, string Email, 
-        string Senha, string Telefone, string Materia, string Instituicao) : IRequest<CriarProfessorResponse>;
-    
-    
-}
+    public string Nome { get; set; }
+    public string Cpf { get; set; }
+    public string Email { get; set; }
+    public string Senha { get; set; }
+    public string Telefone { get; set; }
+    public string Materia { get; set; }
+    [JsonIgnore]
+    public int IdInstituicao { get; set; }
+} 
+
+

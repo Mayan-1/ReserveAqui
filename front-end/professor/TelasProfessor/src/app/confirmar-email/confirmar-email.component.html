@@ -1,0 +1,28 @@
+<div class="flex justify-center items-center h-screen">
+  <div class="shadow-2xl w-96 rounded-md mx-12">
+    <div class="flex justify-center items-center">
+      <div class="flex flex-col items-center">
+        <img src="assets/confirmado.png" class="block" />
+        <h1 class="text-center mt-2 text-gray-700 font-medium">
+          Email confirmado
+        </h1>
+        <p class="text-center mt-2 text-gray-700 font-medium px-11">
+          Seu email foi confirmado. Por favor, clique no botão abaixo e faça seu
+          login.
+        </p>
+      </div>
+    </div>
+    <form class="p-6">
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+          type="button"
+          (click)="irParaLogin()"
+        >
+          Ir para login
+        </button>
+      </div>
+    </form>
+    <p class="text-center text-gray-500 text-xs"></p>
+  </div>
+</div>

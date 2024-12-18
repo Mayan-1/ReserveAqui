@@ -1,0 +1,92 @@
+<div class="flex justify-between items-center mt-7 mb-7">
+  <mat-toolbar
+    class="toolbar"
+    style="display: flex; justify-content: space-between; align-items: center"
+  >
+    <mat-form-field appearance="outline" class="input-filter">
+      <mat-label>Pesquisa</mat-label>
+      <mat-icon matSuffix>search</mat-icon>
+      <input
+        matInput
+        (keyup)="applyFilter($event)"
+        placeholder="Ex. João"
+        #input
+      />
+    </mat-form-field>
+
+    <button
+      class="btn-cadastrar font-bold py-4 px-6 w-36 rounded"
+      (click)="irParaCadastro()"
+    >
+      Cadastrar
+    </button>
+  </mat-toolbar>
+</div>
+
+<div class="mat-elevation-z8 tabela">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <!-- Definições de colunas e dados da tabela seguem aqui -->
+    <ng-container matColumnDef="nome" class="container">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.nome }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="quantidadeAlunos" class="container">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Quantidade</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.quantidadeAlunos }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="turno" class="container">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Turno</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.turno.nome }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="codigo" class="container">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Codigo</th>
+      <td mat-cell *matCellDef="let row">
+        {{ row.codigo }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell *matCellDef="let row">
+        <button
+          mat-icon-button
+          color="primary"
+          (click)="irParaEditar(row.id)"
+          class="edit-button button-action text-blue-600 hover:underline"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button
+          mat-icon-button
+          color="warn"
+          (click)="deletarSala(row.id)"
+          class="delete-button button-action hover:underline text-red-600"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">Nenhuma sala encontrada</td>
+    </tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[10, 25]"
+    aria-label="Select page of users"
+  ></mat-paginator>
+</div>

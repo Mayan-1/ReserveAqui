@@ -15,6 +15,5 @@ public class AtualizarAdministradorValidator : AbstractValidator<AtualizarAdmini
 
         RuleFor(x => x.Telefone).NotEmpty().WithMessage("O telefone não pode ser vazio.");
         RuleFor(x => x.Cpf).NotEmpty().WithMessage("O cpf não pode ser vazio");
-        RuleFor(x => x.Instituicao).NotEmpty().WithMessage("A instituição não pode ser vazia");
     }
 }

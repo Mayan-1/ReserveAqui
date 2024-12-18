@@ -28,6 +28,7 @@ import {
 import { MatIconModule } from '@angular/material/icon';
 import { EditarSalaComponent } from './editar-sala/editar-sala.component';
 import { CalendarioEditarReservaSalaComponent } from './calendario-editar-reserva-sala/calendario-editar-reserva-sala.component';
+import { ConfirmarEmailComponent } from './confirmar-email/confirmar-email.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { CalendarioEditarReservaSalaComponent } from './calendario-editar-reserv
     MainComponent,
     EditarSalaComponent,
     CalendarioEditarReservaSalaComponent,
+    ConfirmarEmailComponent,
   ],
   imports: [
     BrowserModule,

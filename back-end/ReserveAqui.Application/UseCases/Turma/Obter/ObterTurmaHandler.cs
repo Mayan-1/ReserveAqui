@@ -16,7 +16,7 @@ public sealed class ObterTurmaHandler : IRequestHandler<ObterTurmaRequest, Obter
 
     public async Task<ObterTurmaResponse> Handle(ObterTurmaRequest request, CancellationToken cancellationToken)
     {
-        var turma = await _turmaRepository.Obter(request.Id, cancellationToken);
+        var turma = await _turmaRepository.ObterTurma(request.Id);
         if (turma == null) return null;
 
         return _mapper.Map<ObterTurmaResponse>(turma);

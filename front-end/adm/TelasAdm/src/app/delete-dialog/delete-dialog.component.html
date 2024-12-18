@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Confirmação</h1>
+
+<div mat-dialog-content>
+  <p>Tem certeza de que deseja deletar este cadastro?</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onYesClick()" class="button button-yes">
+    Sim
+  </button>
+  <button
+    mat-button
+    color="warn"
+    (click)="onNoClick()"
+    class="button button-no"
+  >
+    Não
+  </button>
+</div>

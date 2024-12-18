@@ -1,9 +1,9 @@
-<div *ngIf="isLoginPage === false">
+<div *ngIf="!isLoginPage && !isEmailPage">
   <app-navbar></app-navbar>
 </div>
 
 <router-outlet></router-outlet>
 
-<div *ngIf="isLoginPage === false">
+<div *ngIf="!isLoginPage && !isEmailPage">
   <app-footer></app-footer>
 </div>

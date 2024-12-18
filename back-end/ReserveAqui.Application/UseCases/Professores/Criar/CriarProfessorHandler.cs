@@ -42,6 +42,7 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
     public async Task<CriarProfessorResponse> Handle(CriarProfessorRequest request,
         CancellationToken cancellationToken)
     {
+        request.IdInstituicao = 2;
         string role = "professor";
 
         var professor = _mapper.Map<Professor>(request);
@@ -52,7 +53,7 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
             return new CriarProfessorResponse { Mensagem = "Matéria não encontrada. " };
         }
 
-        var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
+        var instituicao = await _instituicaoRepository.Obter(request.IdInstituicao, cancellationToken);
         if(instituicao == null)
         {
             return new CriarProfessorResponse { Mensagem = "Instituição não encontrada." };
@@ -61,12 +62,14 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
         professor.Materia = materia;
         professor.Instituicao = instituicao;
 
-        _professorRepository.Criar(professor);
-
         var userExists = await _userManager.FindByNameAsync(request.Nome!);
 
         if (userExists != null)
             throw new InvalidOperationException("O úsuario já existe");
+
+        _professorRepository.Criar(professor);
+
+        
 
         var UserName = request.Nome.Replace(" ", "_");
 
@@ -86,6 +89,9 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
             throw new InvalidOperationException($"Criação de usuario falhou. Erros {errors}");
         }
 
+
+        Console.WriteLine("Chegou aqui");
+
         await _userManager.AddToRoleAsync(user, role);
 
         await SendConfirmationEmail(user, "https://localhost:7078");
@@ -99,7 +105,7 @@ public class CriarProfessorHandler : IRequestHandler<CriarProfessorRequest, Cria
         var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
         var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
-        var confirmationLink = $"{baseUrl}/api/auth/confirm-email?userId={user.Id}&token={encodedToken}";
+        var confirmationLink = $"http://localhost:4200/email-confirmado";
 
         var subject = "Confirmação de Registro";
         var message = $"Por favor, confirme seu registro clicando no link a seguir: <a href='{confirmationLink}'>Confirmar E-mail</a>";

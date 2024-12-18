@@ -1,4 +1,5 @@
-﻿using ReserveAqui.Core.Interfaces.Repositories.AdministradorRepository;
+﻿using Microsoft.EntityFrameworkCore;
+using ReserveAqui.Core.Interfaces.Repositories.AdministradorRepository;
 using ReserveAqui.Core.Models;
 using ReserveAqui.Infra.Config.Data;
 using System;
@@ -13,5 +14,11 @@ public class AdministradorRepository : BaseRepository<Administrador>, IAdministr
 {
     public AdministradorRepository(AppDbContext context) : base(context)
     {
+    }
+
+    public async Task<Administrador> ObterAdministradorPorNome(string nome)
+    {
+        var administrador = await Context.Administrador.FirstOrDefaultAsync(x => x.Nome == nome);
+        return administrador;
     }
 }

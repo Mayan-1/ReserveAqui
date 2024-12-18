@@ -1,0 +1,80 @@
+<form [formGroup]="edicaoMaterialForm" (ngSubmit)="editarMaterial()">
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="materialNome"
+          matTooltip="O nome deve conter no mínimo 3 caracteres"
+        />
+        <mat-error
+          *ngIf="edicaoMaterialForm.get('materialNome')!.hasError('required')"
+        >
+          Por favor, preencha o nome.
+        </mat-error>
+        <mat-error
+          *ngIf="edicaoMaterialForm.get('materialNome')!.hasError('minlength')"
+        >
+          O nome deve conter no mínimo 3 caracteres
+        </mat-error>
+        <mat-icon matSuffix>person</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Quantidade</mat-label>
+        <input matInput type="text" formControlName="materialQuantidade" />
+        <mat-error
+          *ngIf="
+            edicaoMaterialForm.get('materialQuantidade')!.hasError('required')
+          "
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+
+        <mat-icon matSuffix>mail</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Tipo</mat-label>
+        <input matInput class="form-control" formControlName="materialTipo" />
+        <mat-error
+          *ngIf="edicaoMaterialForm.get('materialTipo')!.hasError('required')"
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <button mat-raised-button class="custom-button-editar" type="submit">
+        Editar material
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

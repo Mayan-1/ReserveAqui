@@ -33,10 +33,11 @@ public class CriarAdministradorHandler : IRequestHandler<CriarAdministradorReque
 
     public async Task<CriarAdministradorResponse> Handle(CriarAdministradorRequest request, CancellationToken cancellationToken)
     {
+        request.IdInstituicao = 2;
         string role = "admin";
         var administrador = _mapper.Map<Core.Models.Administrador>(request);
 
-        var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
+        var instituicao = await _instituicaoRepository.Obter(request.IdInstituicao, cancellationToken);
         if (instituicao == null)
             return new CriarAdministradorResponse { Mensagem = "Instituição não encontrada" };
 

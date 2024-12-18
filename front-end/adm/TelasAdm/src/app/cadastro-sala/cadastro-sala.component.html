@@ -1,0 +1,104 @@
+<form [formGroup]="cadastroSalaForm" (ngSubmit)="criarSala()">
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Campo Nome -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="salaNome"
+          matTooltip="O nome deve conter no mínimo 3 caracteres"
+          id="nome"
+        />
+        <mat-error
+          *ngIf="cadastroSalaForm.get('salaNome')!.hasError('required')"
+        >
+          Por favor, preencha o nome.
+        </mat-error>
+        <mat-error
+          *ngIf="cadastroSalaForm.get('salaNome')!.hasError('minlength')"
+        >
+          O nome deve conter no mínimo 3 caracteres
+        </mat-error>
+        <mat-icon matSuffix>font_download</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Campo Tipo -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Tipo</mat-label>
+        <input matInput formControlName="salaTipo" id="tipo" />
+        <mat-error
+          *ngIf="cadastroSalaForm.get('salaTipo')!.hasError('required')"
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>category</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <!-- Campo Capacidade -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Capacidade</mat-label>
+        <input
+          matInput
+          formControlName="salaCapacidade"
+          id="salaCapacidade"
+          matTooltip="Capacidade de alunos na sala"
+        />
+        <mat-error
+          *ngIf="cadastroSalaForm.get('salaCapacidade')!.hasError('required')"
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>filter_9_plus</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Botão Cadastrar -->
+    <mat-grid-tile>
+      <button
+        mat-raised-button
+        class="custom-button-cadastrar custom-button"
+        type="submit"
+        id="btn-cadastrar"
+      >
+        Cadastrar
+      </button>
+    </mat-grid-tile>
+
+    <!-- Botão Limpar -->
+    <mat-grid-tile>
+      <button
+        mat-raised-button
+        class="custom-button-cancelar custom-button"
+        (click)="limparCampos()"
+        type="button"
+      >
+        Limpar Campos
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

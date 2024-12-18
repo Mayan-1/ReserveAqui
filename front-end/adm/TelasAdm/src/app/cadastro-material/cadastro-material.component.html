@@ -1,0 +1,108 @@
+<form [formGroup]="cadastroMaterialForm" (ngSubmit)="criarMaterial()">
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Campo Nome -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="materialNome"
+          matTooltip="O nome deve conter no mínimo 3 caracteres"
+          id="nome"
+        />
+        <mat-error
+          *ngIf="cadastroMaterialForm.get('materialNome')!.hasError('required')"
+        >
+          Por favor, preencha o nome.
+        </mat-error>
+        <mat-error
+          *ngIf="
+            cadastroMaterialForm.get('materialNome')!.hasError('minlength')
+          "
+        >
+          O nome deve conter no mínimo 3 caracteres
+        </mat-error>
+        <mat-icon matSuffix>font_download</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Campo Tipo -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Quantidade</mat-label>
+        <input matInput formControlName="materialQuantidade" id="quantidade" />
+        <mat-error
+          *ngIf="
+            cadastroMaterialForm.get('materialQuantidade')!.hasError('required')
+          "
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>category</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <!-- Campo Capacidade -->
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Tipo</mat-label>
+        <input
+          matInput
+          formControlName="materialTipo"
+          id="materialTipo"
+          matTooltip="Tipo de material"
+        />
+        <mat-error
+          *ngIf="cadastroMaterialForm.get('materialTipo')!.hasError('required')"
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>filter_9_plus</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <!-- Botão Cadastrar -->
+    <mat-grid-tile>
+      <button
+        mat-raised-button
+        class="custom-button-cadastrar custom-button"
+        type="submit"
+        id="btn-cadastrar"
+      >
+        Cadastrar
+      </button>
+    </mat-grid-tile>
+
+    <!-- Botão Limpar -->
+    <mat-grid-tile>
+      <button
+        mat-raised-button
+        class="custom-button-cancelar custom-button"
+        (click)="limparCampos()"
+        type="button"
+      >
+        Limpar Campos
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'TelasProfessor';
 
   isLoginPage: boolean = true;
+  isEmailPage: boolean = true;
 
   constructor(private router: Router) {}
 
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
       if (event instanceof NavigationEnd) {
         // Verifica a URL atual
         this.isLoginPage = this.router.url === '/login';
+        this.isEmailPage = this.router.url === '/email-confirmado';
         console.log('isLoginPage:', this.isLoginPage); // Debug para o console
       }
     });

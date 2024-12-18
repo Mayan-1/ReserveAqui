@@ -23,9 +23,9 @@ builder.Services.ConfigureApplicationApp();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", builder =>
+    options.AddPolicy("AllowAll", builder =>
     {
-        builder.WithOrigins("http://localhost:4200") 
+        builder.AllowAnyOrigin() 
                .AllowAnyHeader()                     
                .AllowAnyMethod();                   
     });
@@ -105,7 +105,7 @@ builder.Services.AddAuthorization(options =>
 
 var app = builder.Build();
 
-app.UseCors("AllowFrontend");
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();

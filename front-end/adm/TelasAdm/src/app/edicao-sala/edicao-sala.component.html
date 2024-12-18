@@ -1,0 +1,74 @@
+<form [formGroup]="edicaoSalaForm" (ngSubmit)="editarSala()">
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input
+          matInput
+          type="text"
+          formControlName="salaNome"
+          matTooltip="O nome deve conter no mínimo 3 caracteres"
+        />
+        <mat-error *ngIf="edicaoSalaForm.get('salaNome')!.hasError('required')">
+          Por favor, preencha o nome.
+        </mat-error>
+        <mat-error
+          *ngIf="edicaoSalaForm.get('salaNome')!.hasError('minlength')"
+        >
+          O nome deve conter no mínimo 3 caracteres
+        </mat-error>
+        <mat-icon matSuffix>font_download</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="2"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Tipo</mat-label>
+        <input matInput type="text" formControlName="salaTipo" />
+        <mat-error *ngIf="edicaoSalaForm.get('salaTipo')!.hasError('required')">
+          Por favor, preencha o campo.
+        </mat-error>
+
+        <mat-icon matSuffix>category</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field class="custom-form-field" appearance="outline">
+        <mat-label>Capacidade</mat-label>
+        <input matInput class="form-control" formControlName="salaCapacidade" />
+        <mat-error
+          *ngIf="edicaoSalaForm.get('salaCapacidade')!.hasError('required')"
+        >
+          Por favor, preencha o campo.
+        </mat-error>
+        <mat-icon matSuffix>filter_9_plus</mat-icon>
+      </mat-form-field>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list
+    cols="1"
+    [rowHeight]="90"
+    class="custom-grid-list"
+    gutterSize="5"
+  >
+    <mat-grid-tile>
+      <button mat-raised-button class="custom-button-editar" type="submit">
+        Editar sala
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

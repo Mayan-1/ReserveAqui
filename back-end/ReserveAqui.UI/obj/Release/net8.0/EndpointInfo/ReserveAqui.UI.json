@@ -1940,10 +1940,6 @@
       "AtualizarAdministradorRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -1952,15 +1948,15 @@
             "type": "string",
             "nullable": true
           },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
           "cpf": {
             "type": "string",
             "nullable": true
           },
           "telefone": {
-            "type": "string",
-            "nullable": true
-          },
-          "instituicao": {
             "type": "string",
             "nullable": true
           }
@@ -2020,19 +2016,15 @@
       "AtualizarProfessorRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "cpf": {
             "type": "string",
             "nullable": true
           },
-          "cpf": {
+          "email": {
             "type": "string",
             "nullable": true
           },
@@ -2041,10 +2033,6 @@
             "nullable": true
           },
           "materia": {
-            "type": "string",
-            "nullable": true
-          },
-          "instituicao": {
             "type": "string",
             "nullable": true
           }
@@ -2128,10 +2116,6 @@
       "AtualizarTurmaRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -2207,10 +2191,6 @@
           "telefone": {
             "type": "string",
             "nullable": true
-          },
-          "instituicao": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2267,10 +2247,6 @@
             "nullable": true
           },
           "materia": {
-            "type": "string",
-            "nullable": true
-          },
-          "instituicao": {
             "type": "string",
             "nullable": true
           }
@@ -2507,6 +2483,10 @@
       "ObterAdministradorResponse": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -2726,6 +2706,10 @@
       "ObterTodasTurmasResponse": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -2747,6 +2731,10 @@
       "ObterTodosMateriaisResponse": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "nome": {
             "type": "string",
             "nullable": true

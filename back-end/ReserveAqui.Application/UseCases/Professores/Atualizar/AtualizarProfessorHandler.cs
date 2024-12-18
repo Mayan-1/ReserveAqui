@@ -31,6 +31,7 @@ public class AtualizarProfessorHandler : IRequestHandler<AtualizarProfessorReque
 
     public async Task<AtualizarProfessorResponse> Handle(AtualizarProfessorRequest request, CancellationToken cancellationToken)
     {
+        request.IdInstituicao = 2;
         var professor = await _professorRepository.ObterProfessor(request.Id, cancellationToken);
         var user = await _userManager.FindByEmailAsync(request.Email);
         if (professor == null || user == null)
@@ -44,7 +45,7 @@ public class AtualizarProfessorHandler : IRequestHandler<AtualizarProfessorReque
             return new AtualizarProfessorResponse { Mensagem = "Matéria não encontrada" };
         }
 
-        var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
+        var instituicao = await _instituicaoRepository.Obter(request.IdInstituicao, cancellationToken);
         if (instituicao == null)
         {
             return new AtualizarProfessorResponse { Mensagem = "Instituição não encontrada" };

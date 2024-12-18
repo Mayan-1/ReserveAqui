@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using ReserveAqui.Application.Services.Token;
+using ReserveAqui.Core.Interfaces.Repositories.AdministradorRepository;
 using ReserveAqui.Core.Interfaces.Repositories.ProfessorRepository;
 using ReserveAqui.Core.Models;
 using ReserveAqui.Infra.Identity.User;
@@ -16,13 +17,15 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IConfiguration _configuration;
     private readonly IProfessorRepository _professorRepository;
+    private readonly IAdministradorRepository _administradorRepository;
 
-    public LoginHandler(ITokenService tokenService, UserManager<ApplicationUser> userManager, IConfiguration configuration, IProfessorRepository professorRepository)
+    public LoginHandler(ITokenService tokenService, UserManager<ApplicationUser> userManager, IConfiguration configuration, IProfessorRepository professorRepository, IAdministradorRepository administradorRepository)
     {
         _tokenService = tokenService;
         _userManager = userManager;
         _configuration = configuration;
         _professorRepository = professorRepository;
+        _administradorRepository = administradorRepository;
     }
 
     public async Task<LoginResponse> Handle(LoginRequest request, CancellationToken cancellationToken)
@@ -54,6 +57,15 @@ public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
                 if (professor != null)
                 {
                     authClaims.Add(new Claim("ProfessorId", professor.Id.ToString())); 
+                }
+            }
+
+            if(userRole.Equals("admin", StringComparison.OrdinalIgnoreCase))
+            {
+                var administrador = await _administradorRepository.ObterAdministradorPorNome(user.UserName);
+                if(administrador != null)
+                {
+                    authClaims.Add(new Claim("AdministradorId", administrador.Id.ToString()));
                 }
             }
         }

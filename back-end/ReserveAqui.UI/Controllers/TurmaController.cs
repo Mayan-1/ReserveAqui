@@ -49,8 +49,7 @@ namespace ReserveAqui.UI.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Atualizar(int id, AtualizarTurmaRequest request, CancellationToken cancellationToken)
         {
-            if (id != request.Id)
-                return BadRequest();
+            request.Id = id;
 
             var response = await _mediator.Send(request, cancellationToken);
             return Ok(response);

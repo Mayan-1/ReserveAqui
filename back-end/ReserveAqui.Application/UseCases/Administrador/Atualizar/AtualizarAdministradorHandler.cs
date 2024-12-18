@@ -29,17 +29,16 @@ public class AtualizarAdministradorHandler : IRequestHandler<AtualizarAdministra
         if (user == null)
             return new AtualizarAdministradorResponse { Mensagem = "Administrador não localizado" };
 
-        var instituicao = await _instituicaoRepository.ObterPorNome(request.Instituicao);
-        if (instituicao == null) return new AtualizarAdministradorResponse { Mensagem = "Instituição não localizada" };
 
         administrador.Nome = request.Nome;
         administrador.Email = request.Email;
         administrador.Cpf = request.Cpf;
         administrador.Telefone = request.Telefone;
-        administrador.Instituicao = instituicao;
+        administrador.Senha = request.Senha;
 
         user.Email = request.Email;
         user.UserName = request.Nome;
+        user.PasswordHash = request.Senha;
 
         _administradorRepository.Atualizar(administrador);
         await _userManager.UpdateAsync(user);

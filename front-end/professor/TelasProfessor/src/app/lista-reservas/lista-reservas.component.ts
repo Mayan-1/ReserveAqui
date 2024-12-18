@@ -25,6 +25,7 @@ export class ListaReservasComponent implements OnInit {
 
   ngOnInit(): void {
     this.idProfessor = this.authService.getIdProfessor(); // Pega o id do professor logado
+    console.log('idprofessor', this.idProfessor);
     if (this.idProfessor != null) {
       this.carregarReservas();
     } else {

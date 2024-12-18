@@ -9,7 +9,6 @@ public class AtualizarAdministradorMapper : Profile
 {
     public AtualizarAdministradorMapper()
     {
-        CreateMap<Core.Models.Administrador, AtualizarAdministradorRequest>()
-                                                     .ForMember(dest => dest.Instituicao, opt => opt.Ignore());
+        CreateMap<Core.Models.Administrador, AtualizarAdministradorRequest>();
     }
 }

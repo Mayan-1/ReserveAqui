@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.borda-red {
+  border: 1px solid red;
+}
+
+.bg-left-login {
+  background: #1248b2;
+}
+
+@media screen and (max-width: 960px) {
+  .bg-left-login {
+    display: none;
+  }
+}
+
+.objeto2 {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.objeto3 {
+  z-index: -1;
+  position: absolute;
+  right: 25%;
+  bottom: 0%;
+}
+
+.grid-1 {
+  width: calc(8.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-1 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-2 {
+  width: calc(16.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-2 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-3 {
+  width: calc(25% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-3 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-4 {
+  width: calc(33.3333333333% - 32px);
+  /* margin: 16px;
+  padding: 16px 0px; */
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-4 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-5 {
+  width: calc(41.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-5 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-6 {
+  width: calc(50% - 32px);
+  /* margin: 16px;
+  padding: 16px 0px; */
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-6 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-7 {
+  width: calc(58.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-7 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-8 {
+  width: calc(66.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-8 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-9 {
+  width: calc(75% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-9 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-10 {
+  width: calc(83.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-10 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-11 {
+  width: calc(91.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-11 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-12 {
+  width: calc(100% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+@media screen and (max-width: 960px) {
+  .grid-12 {
+    width: calc(100% - 32px);
+    float: none;
+  }
+}
+
+.grid-nobreak-1 {
+  width: calc(8.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-2 {
+  width: calc(16.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-3 {
+  width: calc(25% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-4 {
+  width: calc(33.3333333333% - 32px);
+  /* margin: 16px;
+  padding: 16px 0px; */
+  float: left;
+}
+
+.grid-nobreak-5 {
+  width: calc(41.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-6 {
+  width: calc(50% - 32px);
+  /* margin: 16px;
+  padding: 16px 0px; */
+  float: left;
+}
+
+.grid-nobreak-7 {
+  width: calc(58.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-8 {
+  width: calc(66.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-9 {
+  width: calc(75% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-10 {
+  width: calc(83.3333333333% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-11 {
+  width: calc(91.6666666667% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.grid-nobreak-12 {
+  width: calc(100% - 32px);
+  margin: 16px;
+  padding: 16px 0px;
+  float: left;
+}
+
+.borda-red {
+  border: 1px solid red;
+}

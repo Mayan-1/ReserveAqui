@@ -37,6 +37,7 @@ public class AdministradorController : ControllerBase
     [HttpPost]
     public async Task<ActionResult> Criar(CriarAdministradorRequest request, CancellationToken cancellationToken)
     {
+        Console.WriteLine("request valores: ", request.Nome, request.Cpf, request.Telefone, request.Email, request.Senha);
         var response = await _mediator.Send(request, cancellationToken);
         return Ok(response);   
     }
@@ -44,8 +45,7 @@ public class AdministradorController : ControllerBase
     [HttpPut("{id}")]
     public async Task<ActionResult> Atualizar(int id, AtualizarAdministradorRequest request, CancellationToken cancellationToken)
     {
-        if (id != request.Id)
-            return BadRequest();
+        request.Id = id;
 
         var response = await _mediator.Send(request, cancellationToken);
         return Ok(response);

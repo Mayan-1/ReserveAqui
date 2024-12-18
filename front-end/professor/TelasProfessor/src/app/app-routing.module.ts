@@ -9,10 +9,12 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { EditarSalaComponent } from './editar-sala/editar-sala.component';
 import { CalendarioEditarReservaSalaComponent } from './calendario-editar-reserva-sala/calendario-editar-reserva-sala.component';
+import { ConfirmarEmailComponent } from './confirmar-email/confirmar-email.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: TelaLoginComponent },
+  { path: 'email-confirmado', component: ConfirmarEmailComponent },
   { path: 'sala', component: ListaReservasComponent },
   { path: 'materiais', component: ListaReservaMaterialComponent },
   { path: 'tipos', component: TipoReservaComponent },

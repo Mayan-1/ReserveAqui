@@ -4,6 +4,7 @@ namespace ReserveAqui.Application.UseCases.Administrador.Obter;
 
 public sealed record ObterAdministradorResponse
 {
+    public int Id { get; set; }
     public string Nome { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string Cpf { get; set; } = string.Empty;
