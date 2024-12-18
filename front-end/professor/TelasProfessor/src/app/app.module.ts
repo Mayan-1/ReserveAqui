@@ -29,6 +29,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { EditarSalaComponent } from './editar-sala/editar-sala.component';
 import { CalendarioEditarReservaSalaComponent } from './calendario-editar-reserva-sala/calendario-editar-reserva-sala.component';
 import { ConfirmarEmailComponent } from './confirmar-email/confirmar-email.component';
+import { CamposReservaMaterialComponent } from './campos-reserva-material/campos-reserva-material.component';
+import { CalendarioMaterialComponent } from './calendario-material/calendario-material.component';
+import { CalendarioEditarReservaMaterialComponent } from './calendario-editar-reserva-material/calendario-editar-reserva-material.component';
+import { EditarMaterialComponent } from './editar-material/editar-material.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +49,10 @@ import { ConfirmarEmailComponent } from './confirmar-email/confirmar-email.compo
     EditarSalaComponent,
     CalendarioEditarReservaSalaComponent,
     ConfirmarEmailComponent,
+    CamposReservaMaterialComponent,
+    CalendarioMaterialComponent,
+    CalendarioEditarReservaMaterialComponent,
+    EditarMaterialComponent,
   ],
   imports: [
     BrowserModule,

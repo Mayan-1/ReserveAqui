@@ -25,7 +25,6 @@
           <th class="px-4 py-2">Professor</th>
           <th class="px-4 py-2">Data</th>
           <th class="px-4 py-2">Turno</th>
-          <th class="px-4 py-2">Status</th>
           <th class="px-4 py-2">Ação</th>
         </tr>
       </thead>
@@ -38,18 +37,7 @@
           <td class="px-4 py-2">{{ reserva.professor.nome }}</td>
           <td class="px-4 py-2">{{ reserva.data | date }}</td>
           <td class="px-4 py-2">{{ reserva.turno.nome }}</td>
-          <td class="px-4 py-2">
-            <span
-              class="px-2 py-1 rounded-full text-white"
-              [ngClass]="{
-                'bg-green-500': reserva.status === 'Agendado',
-                'bg-red-500': reserva.status === 'Cancelado',
-                'bg-yellow-500': reserva.status === 'Pendente'
-              }"
-            >
-              {{ reserva.status }}
-            </span>
-          </td>
+
           <td class="px-4 py-2 flex items-center space-x-2">
             <button
               class="text-blue-600 hover:underline"

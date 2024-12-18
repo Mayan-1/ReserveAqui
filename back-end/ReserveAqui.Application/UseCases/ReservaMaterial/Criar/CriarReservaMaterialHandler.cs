@@ -30,7 +30,7 @@ public sealed class CriarReservaMaterialHandler : IRequestHandler<CriarReservaMa
     public async Task<CriarReservaMaterialResponse> Handle(CriarReservaMaterialRequest request, CancellationToken cancellationToken)
     {
         var turno = await _turnoRepository.ObterPorNome(request.Turno);
-        var professor = await _professorRepository.ObterProfessorPorNome(request.Professor);
+        var professor = await _professorRepository.ObterProfessor(request.IdProfessor, cancellationToken);
         var material = await _materialRepository.ObterMaterialPorNome(request.Material);
 
         if (professor == null) return new CriarReservaMaterialResponse { Mensagem = "Professor não encontrado" };

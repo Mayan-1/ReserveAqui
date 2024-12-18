@@ -29,7 +29,7 @@ public sealed class AtualizarReservaMaterialHandler : IRequestHandler<AtualizarR
     public async Task<AtualizarReservaMaterialResponse> Handle(AtualizarReservaMaterialRequest request, CancellationToken cancellationToken)
     {
         var turno = await _turnoRepository.ObterPorNome(request.Turno);
-        var professor = await _professorRepository.ObterProfessorPorNome(request.Professor);
+        var professor = await _professorRepository.Obter(request.IdProfessor, cancellationToken);
         var material = await _materialRepository.ObterMaterialPorNome(request.Material);
 
         if (professor == null) return new AtualizarReservaMaterialResponse { Mensagem = "Professor não encontrado" };

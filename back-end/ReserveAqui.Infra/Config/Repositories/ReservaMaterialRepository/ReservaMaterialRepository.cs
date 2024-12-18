@@ -27,4 +27,10 @@ public class ReservaMaterialRepository : BaseRepository<ReservaMaterial>, IReser
             .Where(x => x.Professor.Id == id).ToListAsync();
         return reservas;
     }
+
+    public async Task<ICollection<ReservaMaterial>> ObterReservasComFiltro(Material material, Turno turno, CancellationToken cancellationToken)
+    {
+        var reservas = await Context.ReservaMaterial.Where(x => x.Turno == turno && x.Material == material).ToListAsync();
+        return reservas;
+    }
 }

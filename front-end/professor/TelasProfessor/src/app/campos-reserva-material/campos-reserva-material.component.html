@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Material</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+      <h1 class="text-xl font-bold text-blue-800 mb-6">
+        Reserve o material aqui
+      </h1>
+      <form action="#">
+        <!-- Seleção de sala -->
+        <div class="mb-4">
+          <label for="sala" class="block text-sm font-medium text-gray-700 mb-1"
+            >Selecione o material</label
+          >
+          <select
+            id="sala"
+            name="sala"
+            [(ngModel)]="material"
+            class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          >
+            <option value="" disabled></option>
+            <option *ngFor="let material of materiais" [ngValue]="material">
+              {{ material.nome }}
+            </option>
+          </select>
+        </div>
+
+        <!-- Turno da aula -->
+        <div class="mb-4">
+          <label
+            for="turno"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Turno da aula</label
+          >
+          <select
+            id="turno"
+            name="turno"
+            [(ngModel)]="turno"
+            class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          >
+            <option value="" disabled></option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
+          </select>
+        </div>
+
+        <!-- Descrição da aula -->
+        <div class="mb-6">
+          <label
+            for="descricao"
+            class="block text-sm font-medium text-gray-700 mb-1"
+            >Descrição da aula</label
+          >
+          <textarea
+            id="descricao"
+            name="descricao"
+            rows="4"
+            class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Descrição da aula"
+            [(ngModel)]="descricao"
+          ></textarea>
+        </div>
+
+        <!-- Botão -->
+        <div class="flex justify-end">
+          <button
+            type="button"
+            (click)="onSubmit()"
+            class="bg-blue-600 text-white px-4 py-2 rounded-md shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Próximo
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

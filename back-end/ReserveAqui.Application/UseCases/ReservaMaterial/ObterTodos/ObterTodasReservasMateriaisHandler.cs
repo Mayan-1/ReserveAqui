@@ -17,7 +17,7 @@ public sealed class ObterTodasReservasMateriaisHandler : IRequestHandler<ObterTo
 
     public async Task<ICollection<ObterTodasReservasMateriaisResponse>> Handle(ObterTodasReservasMateriaisRequest request, CancellationToken cancellationToken)
     {
-        var reservas = await _reservaMaterialRepository.ObterTodos(cancellationToken);
+        var reservas = await _reservaMaterialRepository.ObterReservasPorProfessor(request.Id, cancellationToken);
         if (reservas == null) return null;
 
         return _mapper.Map<ICollection<ObterTodasReservasMateriaisResponse>>(reservas);

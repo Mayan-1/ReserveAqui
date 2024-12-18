@@ -37,7 +37,7 @@ export class TelaLoginComponent {
             progressAnimation: 'increasing',
           });
           setTimeout(() => {
-            this.router.navigate(['/sala']);
+            this.router.navigate(['/salas']);
           }, 2000);
         },
         error: (err) => {

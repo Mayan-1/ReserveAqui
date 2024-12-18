@@ -1,0 +1,9 @@
+.demo-inline-calendar-card {
+  width: 300px;
+}
+
+/* Estilo para datas reservadas */
+/* Estilo para datas reservadas */
+::ng-deep .reservado .mat-calendar-body-cell-content {
+  color: red !important;
+}
